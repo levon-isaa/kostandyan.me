@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Novartis — Levon Kostandyan</title>
+  <meta name="description" content="data42 at Novartis (Web): UX research and design for tools scientists use to request Real World Data, helping cut their research time by 44%.">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Levon Kostandyan">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Novartis — Levon Kostandyan">
+  <meta property="og:description" content="data42 at Novartis (Web): UX research and design for tools scientists use to request Real World Data, helping cut their research time by 44%.">
+  <meta property="og:image" content="https://kostandyan.me/images/novartis/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Novartis (Web) case study">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Novartis (Web) case study">
+  <link rel="canonical" href="https://kostandyan.me/works/novartis-app/">
+  <meta property="og:url" content="https://kostandyan.me/works/novartis-app/">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Novartis", "headline": "Novartis (Web) — UX case study", "description": "data42 at Novartis (Web): UX research and design for tools scientists use to request Real World Data, helping cut their research time by 44%.", "genre": "UX case study", "inLanguage": "en", "url": "https://kostandyan.me/works/novartis-app/", "image": "https://kostandyan.me/images/novartis/og.jpg", "author": {"@type": "Person", "name": "Levon Kostandyan", "url": "https://kostandyan.me/"}}</script>
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Chrome: load a page in the background when its link is hovered, so the
+       click (and the page transition) is instant. Other browsers ignore this. -->
+  <script type="speculationrules">
+    {"prerender": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": "/assets/*"}}, {"not": {"href_matches": "/images/*"}}]}, "eagerness": "moderate"}]}
+  </script>
+  <script>
+    // Reveal targets start hidden only when JS runs. If site.js never loads,
+    // drop the class so nothing stays invisible.
+    var d = document.documentElement;
+    d.classList.add("js");
+    setTimeout(function () {
+      if (!d.classList.contains("reveal-ready")) d.classList.remove("js");
+    }, 3000);
+    // Arriving through a page transition: show what's on screen as part of it
+    // (html.arriving); site.js settles things once the transition ends. This
+    // has to live here, before the page first paints.
+    var arrived = function () {
+      d.setAttribute("data-arrived", "");
+      window.dispatchEvent(new Event("arrived"));
+    };
+    window.addEventListener("pagereveal", function (e) {
+      if (!e.viewTransition) return;
+      d.classList.add("arriving");
+      e.viewTransition.finished.then(arrived, arrived);
+    });
+    // Browsers without cross-page transitions (Firefox, older Safari) get the
+    // same fade-and-rise by hand: site.js fades the old page out on click, and
+    // the next page fades in here if we came from one of our own links.
+    if (!("CSSViewTransitionRule" in window) && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      d.classList.add("vt-fallback");
+      try {
+        if (sessionStorage.getItem("vt-nav")) {
+          sessionStorage.removeItem("vt-nav");
+          d.classList.add("vt-enter", "arriving");
+          setTimeout(arrived, 700);
+        }
+      } catch (err) {}
+    }
+  </script>
+  <script src="/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header box">
+    <span class="progress" aria-hidden="true"></span>
+    <a class="brand" href="/">Levon Kostandyan <span class="brand__role">Lead UX Designer</span></a>
+    <button class="menu-btn box" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr">Menu</span><i></i><i></i>
+    </button>
+    <nav id="site-nav" class="nav" aria-label="Main">
+      <a class="box" href="/about/" style="--i:0"><span class="nav__num num" aria-hidden="true">01</span><span>About</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <a class="box" href="/works/" style="--i:1" aria-current="page"><span class="nav__num num" aria-hidden="true">02</span><span>Work</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <a class="box" href="/contact/" style="--i:2"><span class="nav__num num" aria-hidden="true">03</span><span>Contact</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <a class="box nav__cv dl" href="/assets/Levon_Kostandyan_CV.pdf" download data-dl>Download CV<span class="sr"> (PDF)</span><svg class="arrow dl__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><g class="dl__arrow"><path d="M12 3v12M7 10l5 5 5-5"/></g><path class="dl__check" d="M6 11.5l4 4L18 7.5"/><path d="M5 20h14"/></svg></a>
+      <div class="nav__foot" style="--i:3">
+        <span class="label">Say hello</span>
+        <a class="u" href="mailto:levon.kostandyan@gmail.com">levon.kostandyan@gmail.com</a>
+        <a class="nav__foot-cv dl" href="/assets/Levon_Kostandyan_CV.pdf" download data-dl><span class="u">Download CV</span><span class="sr"> (PDF)</span><svg class="arrow dl__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><g class="dl__arrow"><path d="M12 3v12M7 10l5 5 5-5"/></g><path class="dl__check" d="M6 11.5l4 4L18 7.5"/><path d="M5 20h14"/></svg></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="page" tabindex="-1">
+    <section class="case-head row box sec" data-draw>
+      <div class="cell c-12 case-head__title">
+        <div class="case-head__top" data-reveal>
+          <a class="case-head__back" href="/works/"><svg class="arrow arrow--left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg><span class="u">All work</span></a>
+          <p class="label">Case study 10 / 11</p>
+        </div>
+        <h1 class="h1 lines" data-reveal><span class="ln" style="--l:0"><span class="">Novartis</span> </span></h1>
+        <div data-reveal style="--i:2"><span class="tags"><span class="tag">Web</span><span class="tag">NDA</span></span></div>
+      </div>
+    </section>
+
+    <section class="case-meta row box sec" data-draw aria-label="Project details">
+      <div class="cell c-4 div box" data-draw>
+        <p class="label" data-reveal>Role</p>
+        <p data-reveal>UX Researcher / UX Designer / UI Designer</p>
+      </div>
+      <div class="cell c-4 div box" data-draw>
+        <p class="label" data-reveal style="--i:1">Platform</p>
+        <p data-reveal style="--i:1">Web</p>
+      </div>
+      <div class="cell c-4 box" data-draw>
+        <p class="label" data-reveal style="--i:2">Confidentiality</p>
+        <p data-reveal style="--i:2">Under NDA</p>
+      </div>
+    </section>
+
+    <div class="case-banner box sec" data-draw>
+      <div class="media" data-reveal style="--i:0"><img src="/images/novartis/banner.jpg" srcset="/images/novartis/banner-1000w.jpg 1000w, /images/novartis/banner.jpg 2000w" sizes="100vw" alt="Novartis" width="2000" height="745" fetchpriority="high" decoding="async"></div>
+    </div>
+
+    <section class="case-sec row box sec" data-draw>
+      <div class="cell c-4 div box case-sec__label" data-draw>
+        <div class="sticky">
+          <p class="label" data-reveal>01</p>
+          <h2 class="h3" data-reveal style="--i:1">About</h2>
+        </div>
+      </div>
+      <div class="cell c-8">
+        <div class="prose">
+            <p data-reveal>data42 is a strategic Novartis initiative to build a next-generation platform for data analytics.</p>
+        </div>
+      </div>
+    </section>
+    <section class="case-sec row box sec" data-draw>
+      <div class="cell c-4 div box case-sec__label" data-draw>
+        <div class="sticky">
+          <p class="label" data-reveal>02</p>
+          <h2 class="h3" data-reveal style="--i:1">Responsibilities</h2>
+        </div>
+      </div>
+      <div class="cell c-8">
+        <div class="prose">
+            <p data-reveal>On data42, I designed tools that Novartis scientists use to find and request Real World Data, including the Investigations App and the Medical Code List Builder (MCLB).</p>
+            <h3 data-reveal>What I did</h3><ul data-reveal><li>Planned and ran interviews with scientists who work with Real World Data</li><li>Documented the findings on Confluence and prioritized pain points with the team</li><li>Mapped the user journey with stakeholders and developers to close knowledge gaps about the system</li><li>Designed request and tracking flows, such as the four-step New Investigation Request (select data, provide details, select audience, submit) and tracking each request through approval</li><li>Created new layouts and kept the Blueprint-based design system up to date</li></ul>
+            <p data-reveal>This work helped Novartis scientists reduce their research time by 44% through better usability and a more efficient workflow.</p>
+        </div>
+      </div>
+    </section>
+    <section class="case-sec row box sec" data-draw>
+      <div class="cell c-4 div box case-sec__label" data-draw>
+        <div class="sticky">
+          <p class="label" data-reveal>03</p>
+          <h2 class="h3" data-reveal style="--i:1">User Research</h2>
+        </div>
+      </div>
+      <div class="cell c-8">
+        <div class="prose">
+            <p data-reveal>In user interviews, I set out to understand the typical tasks people perform with Real World Data and the specific challenges they face using the Medical Code List Builder (MCLB). I asked about their workflow, the tools they use and their pain points.</p>
+            <p data-reveal>The interviews revealed common themes and patterns in users&#x27; experiences. I used these insights to improve the design and functionality of MCLB and make it more intuitive for people who work with Real World Data.</p>
+        </div>
+      </div>
+    </section>
+    <section class="case-sec row box sec" data-draw>
+      <div class="cell c-4 div box case-sec__label" data-draw>
+        <div class="sticky">
+          <p class="label" data-reveal>04</p>
+          <h2 class="h3" data-reveal style="--i:1">Interview Analysis</h2>
+        </div>
+      </div>
+      <div class="cell c-8">
+        <div class="prose">
+            <p data-reveal>I documented observations and soundbites on a Confluence page to share the interview findings with my team. Prioritizing users&#x27; pain points let us focus on the parts of the tool that would have the biggest impact on the experience.</p>
+            <p data-reveal>I also noted where users were satisfied and gave positive feedback. That matters just as much: it shows what&#x27;s working, so we can build on those strengths. With a clear picture of users&#x27; needs and pain points, we could make informed decisions and create a more effective, user-friendly Medical Code List Builder.</p>
+        </div>
+      </div>
+    </section>
+    <section class="case-sec row box sec" data-draw>
+      <div class="cell c-4 div box case-sec__label" data-draw>
+        <div class="sticky">
+          <p class="label" data-reveal>05</p>
+          <h2 class="h3" data-reveal style="--i:1">User Journey</h2>
+        </div>
+      </div>
+      <div class="cell c-8">
+        <div class="prose">
+            <p data-reveal>A user journey map was a crucial step in closing knowledge gaps about the system, from both the stakeholders&#x27; and the developers&#x27; perspectives. Visualizing the main flows and users&#x27; pain points gave us a deeper understanding of the experience and showed where it could improve.</p>
+            <p data-reveal>Presenting the map to stakeholders and developers aligned everyone&#x27;s understanding of the system and its shortcomings, and opened a discussion about possible solutions and priorities. It became a useful tool for communication between teams, leading to a more effective and user-friendly Medical Code List Builder.</p>
+        </div>
+      </div>
+    </section>
+    <section class="case-sec row box sec" data-draw>
+      <div class="cell c-4 div box case-sec__label" data-draw>
+        <div class="sticky">
+          <p class="label" data-reveal>06</p>
+          <h2 class="h3" data-reveal style="--i:1">Design System Support</h2>
+        </div>
+      </div>
+      <div class="cell c-8">
+        <div class="prose">
+            <p data-reveal>Working with a design system based on the Blueprint framework kept design and development consistent and efficient. I kept the design system up to date as new features were implemented, so every component stayed in sync with the latest standards and guidelines.</p>
+            <p data-reveal>Beyond the existing components, I created new layouts to make the system more flexible, designed to be intuitive and easy to use. Building on the design system and adding layouts where needed streamlined design and development, and made the Medical Code List Builder more cohesive and user-friendly.</p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="pager row box sec" aria-label="More case studies" data-draw>
+      <a class="cell c-6 div box fill" href="/works/inecobank-app/" data-draw>
+        <span class="label">Previous</span>
+        <span class="h2"><svg class="arrow arrow--left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg><span>Inecobank</span></span>
+      </a>
+      <a class="cell c-6 box fill" href="/works/spvrkd/" data-draw>
+        <span class="label">Next</span>
+        <span class="h2"><span>SPVRKD</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__bar">
+      <p>&copy; <span data-year>2026</span> Levon Kostandyan</p>
+      <a class="to-top" href="#top"><span class="u">Back to top</span><svg class="arrow arrow--up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 20V4M6 10l6-6 6 6"/></svg></a>
+    </div>
+  </footer>
+</body>
+</html>

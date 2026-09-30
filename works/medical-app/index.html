@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medical App — Levon Kostandyan</title>
+  <meta name="description" content="MedicalApp (iOS): a secure app for keeping medical records in one place and sharing them with doctors, from research to the user journey.">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Levon Kostandyan">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Medical App — Levon Kostandyan">
+  <meta property="og:description" content="MedicalApp (iOS): a secure app for keeping medical records in one place and sharing them with doctors, from research to the user journey.">
+  <meta property="og:image" content="https://kostandyan.me/images/medical-app/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Medical App (iOS) case study">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Medical App (iOS) case study">
+  <link rel="canonical" href="https://kostandyan.me/works/medical-app/">
+  <meta property="og:url" content="https://kostandyan.me/works/medical-app/">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Medical App", "headline": "Medical App (iOS) — UX case study", "description": "MedicalApp (iOS): a secure app for keeping medical records in one place and sharing them with doctors, from research to the user journey.", "genre": "UX case study", "inLanguage": "en", "url": "https://kostandyan.me/works/medical-app/", "image": "https://kostandyan.me/images/medical-app/og.jpg", "author": {"@type": "Person", "name": "Levon Kostandyan", "url": "https://kostandyan.me/"}}</script>
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Chrome: load a page in the background when its link is hovered, so the
+       click (and the page transition) is instant. Other browsers ignore this. -->
+  <script type="speculationrules">
+    {"prerender": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": "/assets/*"}}, {"not": {"href_matches": "/images/*"}}]}, "eagerness": "moderate"}]}
+  </script>
+  <script>
+    // Reveal targets start hidden only when JS runs. If site.js never loads,
+    // drop the class so nothing stays invisible.
+    var d = document.documentElement;
+    d.classList.add("js");
+    setTimeout(function () {
+      if (!d.classList.contains("reveal-ready")) d.classList.remove("js");
+    }, 3000);
+    // Arriving through a page transition: show what's on screen as part of it
+    // (html.arriving); site.js settles things once the transition ends. This
+    // has to live here, before the page first paints.
+    var arrived = function () {
+      d.setAttribute("data-arrived", "");
+      window.dispatchEvent(new Event("arrived"));
+    };
+    window.addEventListener("pagereveal", function (e) {
+      if (!e.viewTransition) return;
+      d.classList.add("arriving");
+      e.viewTransition.finished.then(arrived, arrived);
+    });
+    // Browsers without cross-page transitions (Firefox, older Safari) get the
+    // same fade-and-rise by hand: site.js fades the old page out on click, and
+    // the next page fades in here if we came from one of our own links.
+    if (!("CSSViewTransitionRule" in window) && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      d.classList.add("vt-fallback");
+      try {
+        if (sessionStorage.getItem("vt-nav")) {
+          sessionStorage.removeItem("vt-nav");
+          d.classList.add("vt-enter", "arriving");
+          setTimeout(arrived, 700);
+        }
+      } catch (err) {}
+    }
+  </script>
+  <script src="/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header box">
+    <span class="progress" aria-hidden="true"></span>
+    <a class="brand" href="/">Levon Kostandyan <span class="brand__role">Lead UX Designer</span></a>
+    <button class="menu-btn box" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr">Menu</span><i></i><i></i>
+    </button>
+    <nav id="site-nav" class="nav" aria-label="Main">
+      <a class="box" href="/about/" style="--i:0"><span class="nav__num num" aria-hidden="true">01</span><span>About</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <a class="box" href="/works/" style="--i:1" aria-current="page"><span class="nav__num num" aria-hidden="true">02</span><span>Work</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <a class="box" href="/contact/" style="--i:2"><span class="nav__num num" aria-hidden="true">03</span><span>Contact</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <a class="box nav__cv dl" href="/assets/Levon_Kostandyan_CV.pdf" download data-dl>Download CV<span class="sr"> (PDF)</span><svg class="arrow dl__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><g class="dl__arrow"><path d="M12 3v12M7 10l5 5 5-5"/></g><path class="dl__check" d="M6 11.5l4 4L18 7.5"/><path d="M5 20h14"/></svg></a>
+      <div class="nav__foot" style="--i:3">
+        <span class="label">Say hello</span>
+        <a class="u" href="mailto:levon.kostandyan@gmail.com">levon.kostandyan@gmail.com</a>
+        <a class="nav__foot-cv dl" href="/assets/Levon_Kostandyan_CV.pdf" download data-dl><span class="u">Download CV</span><span class="sr"> (PDF)</span><svg class="arrow dl__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><g class="dl__arrow"><path d="M12 3v12M7 10l5 5 5-5"/></g><path class="dl__check" d="M6 11.5l4 4L18 7.5"/><path d="M5 20h14"/></svg></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="page" tabindex="-1">
+    <section class="case-head row box sec" data-draw>
+      <div class="cell c-12 case-head__title">
+        <div class="case-head__top" data-reveal>
+          <a class="case-head__back" href="/works/"><svg class="arrow arrow--left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg><span class="u">All work</span></a>
+          <p class="label">Case study 05 / 11</p>
+        </div>
+        <h1 class="h1 lines" data-reveal><span class="ln" style="--l:0"><span class="">Medical App</span> </span></h1>
+        <div data-reveal style="--i:2"><span class="tags"><span class="tag">iOS</span></span></div>
+      </div>
+    </section>
+
+    <section class="case-meta row box sec" data-draw aria-label="Project details">
+      <div class="cell c-4 div box" data-draw>
+        <p class="label" data-reveal>Role</p>
+        <p data-reveal>UX Researcher / UX Designer / UI Designer</p>
+      </div>
+      <div class="cell c-4 div box" data-draw>
+        <p class="label" data-reveal style="--i:1">Platform</p>
+        <p data-reveal style="--i:1">iOS</p>
+      </div>
+      <a class="cell c-4 box fill" href="https://www.behance.net/gallery/185396179/Medical-App-Case-Study" target="_blank" rel="noopener noreferrer" data-draw>
+        <p class="label" data-reveal style="--i:2">Full case study</p>
+        <p data-reveal style="--i:2"><span>View on Behance</span><span class="sr"> (opens in a new tab)</span><svg class="arrow arrow--out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></p>
+      </a>
+    </section>
+
+    <div class="case-banner box sec" data-draw>
+      <div class="media" data-reveal style="--i:0"><img src="/images/medical-app/banner.jpg" srcset="/images/medical-app/banner-1000w.jpg 1000w, /images/medical-app/banner.jpg 2000w" sizes="100vw" alt="Medical App" width="2000" height="745" fetchpriority="high" decoding="async"></div>
+    </div>
+
+    <section class="case-sec row box sec" data-draw>
+      <div class="cell c-4 div box case-sec__label" data-draw>
+        <div class="sticky">
+          <p class="label" data-reveal>01</p>
+          <h2 class="h3" data-reveal style="--i:1">Pain Points</h2>
+        </div>
+      </div>
+      <div class="cell c-8">
+        <div class="prose">
+            <p data-reveal>Medical records are extremely important and sensitive documents that hold a lot of private information about a person. Both patients and doctors rely on them for accurate diagnoses. Over time, though, these documents get lost or misplaced, and vital information goes with them. It&#x27;s a mess for patients and doctors alike, and it needs solving.</p>
+            <h3 data-reveal>Patients</h3><ul data-reveal><li>Unable to provide their medical history in an emergency</li><li>Have to carry multiple physical documents to every doctor&#x27;s visit</li><li>Delayed admission because insurance details aren&#x27;t available</li><li>Emergency contacts aren&#x27;t available when they&#x27;re urgently needed</li></ul>
+            <h3 data-reveal>Doctors</h3><ul data-reveal><li>No access to a patient&#x27;s medical history during an emergency</li><li>Delays in providing the right medical assistance</li><li>No access to a patient&#x27;s OPD (outpatient department) visit history</li></ul>
+        </div>
+      </div>
+    </section>
+    <section class="case-sec row box sec" data-draw>
+      <div class="cell c-4 div box case-sec__label" data-draw>
+        <div class="sticky">
+          <p class="label" data-reveal>02</p>
+          <h2 class="h3" data-reveal style="--i:1">Possible Solution</h2>
+        </div>
+      </div>
+      <div class="cell c-8">
+        <div class="prose">
+            <p data-reveal>MedicalApp is a healthcare app that acts as a comprehensive, secure medical partner for patients and healthcare providers. Patients keep their medical records in one place, so they can easily access them and share them with doctors. They can also keep track of their health, from doctor&#x27;s appointments and medication schedules to test results, and upload records from hospitals, clinics and labs, so there&#x27;s no need to carry paper copies.</p>
+            <h3 data-reveal>Key Features</h3><ul data-reveal><li>Patients can upload, store and access their personal, medical and health insurance records</li><li>Patients can book appointments with doctors in the app</li><li>A doctor&#x27;s dashboard gives easy access to a patient&#x27;s medical history, diagnoses and reports</li><li>QR and facial recognition scans let healthcare providers access a patient&#x27;s records in an emergency. To protect privacy, records can only be opened with a one-time password (OTP) sent to the user or their emergency contact</li></ul>
+        </div>
+      </div>
+    </section>
+    <section class="case-sec row box sec" data-draw>
+      <div class="cell c-4 div box case-sec__label" data-draw>
+        <div class="sticky">
+          <p class="label" data-reveal>03</p>
+          <h2 class="h3" data-reveal style="--i:1">Research Insights</h2>
+        </div>
+      </div>
+      <div class="cell c-8">
+        <div class="prose">
+            <p data-reveal>In our survey, a surprisingly high share of women aged 25 to 60, 41%, said they regularly use an online doctor consultation app for non-emergency health concerns. Men used these apps too, but far less: 28%. The results show growing acceptance of telehealth, and that these apps are becoming an important supplement to in-person visits.</p>
+            <p data-reveal>The study also shows a clear preference for mobile apps. Their convenience, ease of use and personalized experience suit people who want doctor consultations and medical advice at home or on the go, and they&#x27;re fast becoming the preferred way for tech-savvy people to access healthcare online.</p>
+            <p data-reveal>Participants often struggle to keep complete, up-to-date medical records, especially when they see several doctors across different healthcare networks. As a result, they can&#x27;t quickly access important information in an emergency or when seeing a new doctor, which puts their health at risk when doctors need to make fast, informed decisions. They would benefit greatly from complete, centralized and accessible health records.</p>
+            <p data-reveal>Participants want an app where their health information (medical records, insurance records, test results and other sensitive data) is stored securely in one place. That makes it easy for them and their doctors to access, simpler to share between providers, and gives an overview of their health over time. Given how sensitive health data is, privacy and security are paramount.</p>
+            <p data-reveal>The app should include doctors from a wide range of specialties, from general practitioners to cardiology, oncology, orthopedics, pediatrics and more, so it can meet the health needs of every user. Doctors from different cultural and linguistic backgrounds matter too, so patients from every background feel included.</p>
+            <p data-reveal>Participants also want doctors, nurses and other healthcare providers to be able to look up a patient&#x27;s medical history, recent vitals, lab results and other key details quickly and easily. A clear overview of a patient&#x27;s health at any moment helps clinicians give the best possible care and improves the overall patient experience.</p>
+        </div>
+      </div>
+    </section>
+    <section class="case-sec row box sec" data-draw>
+      <div class="cell c-4 div box case-sec__label" data-draw>
+        <div class="sticky">
+          <p class="label" data-reveal>04</p>
+          <h2 class="h3" data-reveal style="--i:1">User Journey Map</h2>
+        </div>
+      </div>
+      <div class="cell c-8">
+        <div class="prose">
+            <p data-reveal>The user journey map shows how people will interact with the app, from first discovering it, through engagement, to the extension phase. It gives a full picture of the stages users go through, so the experience can be understood from start to finish. Mapping it helped me identify the crucial interactions and touchpoints, and fine-tune the experience to improve user satisfaction and engagement.</p>
+            <div class="media" data-reveal style="--i:0"><a class="zoom" href="/images/medical-app/work-item_user-journey-map.jpg" aria-label="Enlarge image: Medical App — User Journey Map"><img src="/images/medical-app/work-item_user-journey-map.jpg" srcset="/images/medical-app/work-item_user-journey-map-1000w.jpg 1000w, /images/medical-app/work-item_user-journey-map-1400w.jpg 1400w, /images/medical-app/work-item_user-journey-map.jpg 2000w" sizes="(max-width: 800px) 100vw, 62vw" alt="Medical App — User Journey Map" width="2000" height="2125" loading="lazy" decoding="async"></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="case-sec row box sec" data-draw>
+      <div class="cell c-4 div box case-sec__label" data-draw>
+        <div class="sticky">
+          <p class="label" data-reveal>05</p>
+          <h2 class="h3" data-reveal style="--i:1">Competitive Analysis</h2>
+        </div>
+      </div>
+      <div class="cell c-8">
+        <div class="prose">
+            <p data-reveal>We ran an in-depth competitive analysis of leading healthcare apps to understand their strengths and weaknesses and find opportunities to do better. It showed which features users want but competitors lack, and which tools users value most, so we knew what to build in. Understanding the landscape helped us avoid common pitfalls and design a solution tailored to the needs of patients and healthcare professionals.</p>
+            <div class="media" data-reveal style="--i:0"><a class="zoom" href="/images/medical-app/work-item_competetive-analysis.jpg" aria-label="Enlarge image: Medical App — Competitive Analysis"><img src="/images/medical-app/work-item_competetive-analysis.jpg" srcset="/images/medical-app/work-item_competetive-analysis-1000w.jpg 1000w, /images/medical-app/work-item_competetive-analysis-1400w.jpg 1400w, /images/medical-app/work-item_competetive-analysis.jpg 2000w" sizes="(max-width: 800px) 100vw, 62vw" alt="Medical App — Competitive Analysis" width="2000" height="702" loading="lazy" decoding="async"></a></div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="pager row box sec" aria-label="More case studies" data-draw>
+      <a class="cell c-6 div box fill" href="/works/list-am-app/" data-draw>
+        <span class="label">Previous</span>
+        <span class="h2"><svg class="arrow arrow--left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg><span>List.am</span></span>
+      </a>
+      <a class="cell c-6 box fill" href="/works/finfly/" data-draw>
+        <span class="label">Next</span>
+        <span class="h2"><span>FinFly</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__bar">
+      <p>&copy; <span data-year>2026</span> Levon Kostandyan</p>
+      <a class="to-top" href="#top"><span class="u">Back to top</span><svg class="arrow arrow--up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 20V4M6 10l6-6 6 6"/></svg></a>
+    </div>
+  </footer>
+</body>
+</html>

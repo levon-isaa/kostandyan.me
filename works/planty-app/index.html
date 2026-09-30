@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planty App — Levon Kostandyan</title>
+  <meta name="description" content="Planty (iOS): a plant care app that helps new gardeners diagnose plant problems and ask experts for help, from research and wireframes to testing with users.">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Levon Kostandyan">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Planty App — Levon Kostandyan">
+  <meta property="og:description" content="Planty (iOS): a plant care app that helps new gardeners diagnose plant problems and ask experts for help, from research and wireframes to testing with users.">
+  <meta property="og:image" content="https://kostandyan.me/images/planty/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Planty App (iOS) case study">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Planty App (iOS) case study">
+  <link rel="canonical" href="https://kostandyan.me/works/planty-app/">
+  <meta property="og:url" content="https://kostandyan.me/works/planty-app/">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Planty App", "headline": "Planty App (iOS) — UX case study", "description": "Planty (iOS): a plant care app that helps new gardeners diagnose plant problems and ask experts for help, from research and wireframes to testing with users.", "genre": "UX case study", "inLanguage": "en", "url": "https://kostandyan.me/works/planty-app/", "image": "https://kostandyan.me/images/planty/og.jpg", "author": {"@type": "Person", "name": "Levon Kostandyan", "url": "https://kostandyan.me/"}}</script>
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Chrome: load a page in the background when its link is hovered, so the
+       click (and the page transition) is instant. Other browsers ignore this. -->
+  <script type="speculationrules">
+    {"prerender": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": "/assets/*"}}, {"not": {"href_matches": "/images/*"}}]}, "eagerness": "moderate"}]}
+  </script>
+  <script>
+    // Reveal targets start hidden only when JS runs. If site.js never loads,
+    // drop the class so nothing stays invisible.
+    var d = document.documentElement;
+    d.classList.add("js");
+    setTimeout(function () {
+      if (!d.classList.contains("reveal-ready")) d.classList.remove("js");
+    }, 3000);
+    // Arriving through a page transition: show what's on screen as part of it
+    // (html.arriving); site.js settles things once the transition ends. This
+    // has to live here, before the page first paints.
+    var arrived = function () {
+      d.setAttribute("data-arrived", "");
+      window.dispatchEvent(new Event("arrived"));
+    };
+    window.addEventListener("pagereveal", function (e) {
+      if (!e.viewTransition) return;
+      d.classList.add("arriving");
+      e.viewTransition.finished.then(arrived, arrived);
+    });
+    // Browsers without cross-page transitions (Firefox, older Safari) get the
+    // same fade-and-rise by hand: site.js fades the old page out on click, and
+    // the next page fades in here if we came from one of our own links.
+    if (!("CSSViewTransitionRule" in window) && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      d.classList.add("vt-fallback");
+      try {
+        if (sessionStorage.getItem("vt-nav")) {
+          sessionStorage.removeItem("vt-nav");
+          d.classList.add("vt-enter", "arriving");
+          setTimeout(arrived, 700);
+        }
+      } catch (err) {}
+    }
+  </script>
+  <script src="/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header box">
+    <span class="progress" aria-hidden="true"></span>
+    <a class="brand" href="/">Levon Kostandyan <span class="brand__role">Lead UX Designer</span></a>
+    <button class="menu-btn box" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr">Menu</span><i></i><i></i>
+    </button>
+    <nav id="site-nav" class="nav" aria-label="Main">
+      <a class="box" href="/about/" style="--i:0"><span class="nav__num num" aria-hidden="true">01</span><span>About</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <a class="box" href="/works/" style="--i:1" aria-current="page"><span class="nav__num num" aria-hidden="true">02</span><span>Work</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <a class="box" href="/contact/" style="--i:2"><span class="nav__num num" aria-hidden="true">03</span><span>Contact</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <a class="box nav__cv dl" href="/assets/Levon_Kostandyan_CV.pdf" download data-dl>Download CV<span class="sr"> (PDF)</span><svg class="arrow dl__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><g class="dl__arrow"><path d="M12 3v12M7 10l5 5 5-5"/></g><path class="dl__check" d="M6 11.5l4 4L18 7.5"/><path d="M5 20h14"/></svg></a>
+      <div class="nav__foot" style="--i:3">
+        <span class="label">Say hello</span>
+        <a class="u" href="mailto:levon.kostandyan@gmail.com">levon.kostandyan@gmail.com</a>
+        <a class="nav__foot-cv dl" href="/assets/Levon_Kostandyan_CV.pdf" download data-dl><span class="u">Download CV</span><span class="sr"> (PDF)</span><svg class="arrow dl__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><g class="dl__arrow"><path d="M12 3v12M7 10l5 5 5-5"/></g><path class="dl__check" d="M6 11.5l4 4L18 7.5"/><path d="M5 20h14"/></svg></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="page" tabindex="-1">
+    <section class="case-head row box sec" data-draw>
+      <div class="cell c-12 case-head__title">
+        <div class="case-head__top" data-reveal>
+          <a class="case-head__back" href="/works/"><svg class="arrow arrow--left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg><span class="u">All work</span></a>
+          <p class="label">Case study 02 / 11</p>
+        </div>
+        <h1 class="h1 lines" data-reveal><span class="ln" style="--l:0"><span class="">Planty App</span> </span></h1>
+        <div data-reveal style="--i:2"><span class="tags"><span class="tag">iOS</span></span></div>
+      </div>
+    </section>
+
+    <section class="case-meta row box sec" data-draw aria-label="Project details">
+      <div class="cell c-4 div box" data-draw>
+        <p class="label" data-reveal>Role</p>
+        <p data-reveal>UX Researcher / UX Designer / UI Designer</p>
+      </div>
+      <div class="cell c-4 div box" data-draw>
+        <p class="label" data-reveal style="--i:1">Platform</p>
+        <p data-reveal style="--i:1">iOS</p>
+      </div>
+      <a class="cell c-4 box fill" href="https://www.behance.net/gallery/142507201/Planty-App-%28iOS%29-Case-Study" target="_blank" rel="noopener noreferrer" data-draw>
+        <p class="label" data-reveal style="--i:2">Full case study</p>
+        <p data-reveal style="--i:2"><span>View on Behance</span><span class="sr"> (opens in a new tab)</span><svg class="arrow arrow--out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></p>
+      </a>
+    </section>
+
+    <div class="case-banner box sec" data-draw>
+      <div class="media" data-reveal style="--i:0"><img src="/images/planty/banner.jpg" srcset="/images/planty/banner-1000w.jpg 1000w, /images/planty/banner.jpg 2000w" sizes="100vw" alt="Planty App" width="2000" height="745" fetchpriority="high" decoding="async"></div>
+    </div>
+
+    <section class="case-sec row box sec" data-draw>
+      <div class="cell c-4 div box case-sec__label" data-draw>
+        <div class="sticky">
+          <p class="label" data-reveal>01</p>
+          <h2 class="h3" data-reveal style="--i:1">Pain Points</h2>
+        </div>
+      </div>
+      <div class="cell c-8">
+        <div class="prose">
+            <p data-reveal>The Covid-19 outbreak led a large number of people to start gardening for the first time. With this wave of new gardeners came a wave of questions about how to grow and care for plants. Lack of time and fear of failure are the two most common reasons people don&#x27;t garden.</p>
+            <p data-reveal>New gardeners have many questions and are more likely to fail if they don&#x27;t get the guidance they need. People who fail often give up gardening altogether, which means fewer gardening customers. To keep people gardening, products need to make it easier, so there is a real opportunity for better garden education that helps people save time and enjoy the experience.</p>
+        </div>
+      </div>
+    </section>
+    <section class="case-sec row box sec" data-draw>
+      <div class="cell c-4 div box case-sec__label" data-draw>
+        <div class="sticky">
+          <p class="label" data-reveal>02</p>
+          <h2 class="h3" data-reveal style="--i:1">Possible Solution</h2>
+        </div>
+      </div>
+      <div class="cell c-8">
+        <div class="prose">
+            <p data-reveal>A digital solution for getting help with plants and caring for them: an app that lets gardeners quickly and easily identify and fix problems with their plants.</p>
+            <p data-reveal>Planty is a plant care app that gives gardeners answers and support, helping them have more success in the garden.</p>
+        </div>
+      </div>
+    </section>
+    <section class="case-sec row box sec" data-draw>
+      <div class="cell c-4 div box case-sec__label" data-draw>
+        <div class="sticky">
+          <p class="label" data-reveal>03</p>
+          <h2 class="h3" data-reveal style="--i:1">Key Findings</h2>
+        </div>
+      </div>
+      <div class="cell c-8">
+        <div class="prose">
+            <p data-reveal>Keep it simple: figuring out what&#x27;s wrong with a plant, and how to fix it, can be difficult.</p>
+            <p data-reveal>Time matters: searching for help online takes too long and doesn&#x27;t always work, and it takes far too long to tell whether the advice will actually help.</p>
+            <p data-reveal>Real-life help: users want advice from experienced gardeners.</p>
+            <p data-reveal>Vegetables are popular: everyone enjoyed growing a vegetable garden.</p>
+            <p data-reveal>Pests and diseases are the worst: dealing with plant problems and losing a harvest is the most frustrating part.</p>
+        </div>
+      </div>
+    </section>
+    <section class="case-sec row box sec" data-draw>
+      <div class="cell c-4 div box case-sec__label" data-draw>
+        <div class="sticky">
+          <p class="label" data-reveal>04</p>
+          <h2 class="h3" data-reveal style="--i:1">Wireframe</h2>
+        </div>
+      </div>
+      <div class="cell c-8">
+        <div class="prose">
+            <p data-reveal>After exploring a few directions and choosing a design I liked, I built low-fidelity wireframes in Figma, focusing on the golden path scenario and the elements I thought would be most useful to users.</p>
+            <div class="media" data-reveal style="--i:0"><a class="zoom" href="/images/planty/work-item_wireframe.jpg" aria-label="Enlarge image: Planty App — Wireframe"><img src="/images/planty/work-item_wireframe.jpg" srcset="/images/planty/work-item_wireframe-1000w.jpg 1000w, /images/planty/work-item_wireframe-1400w.jpg 1400w, /images/planty/work-item_wireframe.jpg 2000w" sizes="(max-width: 800px) 100vw, 62vw" alt="Planty App — Wireframe" width="2000" height="844" loading="lazy" decoding="async"></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="case-sec row box sec" data-draw>
+      <div class="cell c-4 div box case-sec__label" data-draw>
+        <div class="sticky">
+          <p class="label" data-reveal>05</p>
+          <h2 class="h3" data-reveal style="--i:1">Testing</h2>
+        </div>
+      </div>
+      <div class="cell c-8">
+        <div class="prose">
+            <p data-reveal>I used Userberry to run test scenarios with the high-fidelity prototype, gathering feedback on the app design and core user flows and spotting usability issues.</p>
+            <p data-reveal>There were 10 participants in total, a mix of gardeners and designers. The scenario: you&#x27;re a beginner gardener who has just started a garden, but you&#x27;re having trouble with your plants and don&#x27;t know what&#x27;s wrong.</p>
+            <h3 data-reveal>Tasks</h3><ul data-reveal><li>Task 1: You have a new plant with a problem. Show me how you would find out what the problem is and how to treat it.</li><li>Task 2: You have a question about your plant that you&#x27;d like a garden expert to help with. Show me how you would ask for help.</li><li>Task 3: You&#x27;ve received a notification that an expert has replied to your question. Show me how you would check the message.</li></ul>
+            <h3 data-reveal>Feedback</h3><ul data-reveal><li>90% task completion: most users completed the tasks of diagnosing their plant&#x27;s problem, choosing a treatment, and contacting or replying to an expert. A simpler flow with more obvious options would help the users who struggled.</li><li>80% found the app helpful: most participants found the app useful for gardening, and the &quot;Ask an Expert&quot; feature was especially well received.</li><li>25% misclick rate: users suggested simplifying the home page and plant cards. Removing duplicate controls will make the flow for adding plants clearer.</li></ul>
+            <div class="media" data-reveal style="--i:0"><a class="zoom" href="/images/planty/work-item_testing.jpg" aria-label="Enlarge image: Planty App — Testing"><img src="/images/planty/work-item_testing.jpg" srcset="/images/planty/work-item_testing-1000w.jpg 1000w, /images/planty/work-item_testing-1400w.jpg 1400w, /images/planty/work-item_testing.jpg 2000w" sizes="(max-width: 800px) 100vw, 62vw" alt="Planty App — Testing" width="2000" height="593" loading="lazy" decoding="async"></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="case-sec row box sec" data-draw>
+      <div class="cell c-4 div box case-sec__label" data-draw>
+        <div class="sticky">
+          <p class="label" data-reveal>06</p>
+          <h2 class="h3" data-reveal style="--i:1">Final UI</h2>
+        </div>
+      </div>
+      <div class="cell c-8">
+        <div class="prose">
+            <p data-reveal>Overall, it was a great experience. I learned a lot, especially about mobile and iOS design patterns, and got to stretch my UX muscles. My key takeaways:</p>
+            <p data-reveal>Iteration produces better results. Testing the high-fidelity prototype showed that most users understood the design and found it useful, so we reached our goal. But reaching the goal doesn&#x27;t mean the product is ready to ship. Iterating on the design based on user feedback, and applying solid design principles, gave users a better experience.</p>
+            <p data-reveal>Simplicity is crucial. On every screen and at every step, users should be able to see their next action, and redundancy should be removed. The more the UI focuses on the user&#x27;s main goal, the better.</p>
+            <p data-reveal>Initial states are critical. Early prototypes assumed users were opening the app for the second or third time, because I needed to fill out plant cards, notifications and reminders. That only added confusion: first-run states and onboarding moments should be designed from the earliest prototypes.</p>
+            <div class="media" data-reveal style="--i:0"><a class="zoom" href="/images/planty/work-item_final-ui.jpg" aria-label="Enlarge image: Planty App — Final UI"><img src="/images/planty/work-item_final-ui.jpg" srcset="/images/planty/work-item_final-ui-1000w.jpg 1000w, /images/planty/work-item_final-ui-1400w.jpg 1400w, /images/planty/work-item_final-ui.jpg 2000w" sizes="(max-width: 800px) 100vw, 62vw" alt="Planty App — Final UI" width="2000" height="2054" loading="lazy" decoding="async"></a></div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="pager row box sec" aria-label="More case studies" data-draw>
+      <a class="cell c-6 div box fill" href="/works/henaket-design-system/" data-draw>
+        <span class="label">Previous</span>
+        <span class="h2"><svg class="arrow arrow--left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg><span>Henaket Design System</span></span>
+      </a>
+      <a class="cell c-6 box fill" href="/works/roommate-app/" data-draw>
+        <span class="label">Next</span>
+        <span class="h2"><span>Roommate</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__bar">
+      <p>&copy; <span data-year>2026</span> Levon Kostandyan</p>
+      <a class="to-top" href="#top"><span class="u">Back to top</span><svg class="arrow arrow--up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 20V4M6 10l6-6 6 6"/></svg></a>
+    </div>
+  </footer>
+</body>
+</html>

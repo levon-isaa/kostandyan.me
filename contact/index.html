@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Levon Kostandyan</title>
+  <meta name="description" content="Get in touch with Levon Kostandyan, Lead UX Designer in Yerevan: email, LinkedIn, Behance, Dribbble and CV.">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Levon Kostandyan">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Contact — Levon Kostandyan">
+  <meta property="og:description" content="Get in touch with Levon Kostandyan, Lead UX Designer in Yerevan: email, LinkedIn, Behance, Dribbble and CV.">
+  <meta property="og:image" content="https://kostandyan.me/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Levon Kostandyan — Lead UX Designer, designing complicated systems and huge data">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Levon Kostandyan — Lead UX Designer, designing complicated systems and huge data">
+  <link rel="canonical" href="https://kostandyan.me/contact/">
+  <meta property="og:url" content="https://kostandyan.me/contact/">
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Chrome: load a page in the background when its link is hovered, so the
+       click (and the page transition) is instant. Other browsers ignore this. -->
+  <script type="speculationrules">
+    {"prerender": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": "/assets/*"}}, {"not": {"href_matches": "/images/*"}}]}, "eagerness": "moderate"}]}
+  </script>
+  <script>
+    // Reveal targets start hidden only when JS runs. If site.js never loads,
+    // drop the class so nothing stays invisible.
+    var d = document.documentElement;
+    d.classList.add("js");
+    setTimeout(function () {
+      if (!d.classList.contains("reveal-ready")) d.classList.remove("js");
+    }, 3000);
+    // Arriving through a page transition: show what's on screen as part of it
+    // (html.arriving); site.js settles things once the transition ends. This
+    // has to live here, before the page first paints.
+    var arrived = function () {
+      d.setAttribute("data-arrived", "");
+      window.dispatchEvent(new Event("arrived"));
+    };
+    window.addEventListener("pagereveal", function (e) {
+      if (!e.viewTransition) return;
+      d.classList.add("arriving");
+      e.viewTransition.finished.then(arrived, arrived);
+    });
+    // Browsers without cross-page transitions (Firefox, older Safari) get the
+    // same fade-and-rise by hand: site.js fades the old page out on click, and
+    // the next page fades in here if we came from one of our own links.
+    if (!("CSSViewTransitionRule" in window) && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      d.classList.add("vt-fallback");
+      try {
+        if (sessionStorage.getItem("vt-nav")) {
+          sessionStorage.removeItem("vt-nav");
+          d.classList.add("vt-enter", "arriving");
+          setTimeout(arrived, 700);
+        }
+      } catch (err) {}
+    }
+  </script>
+  <script src="/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header box">
+    <span class="progress" aria-hidden="true"></span>
+    <a class="brand" href="/">Levon Kostandyan <span class="brand__role">Lead UX Designer</span></a>
+    <button class="menu-btn box" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr">Menu</span><i></i><i></i>
+    </button>
+    <nav id="site-nav" class="nav" aria-label="Main">
+      <a class="box" href="/about/" style="--i:0"><span class="nav__num num" aria-hidden="true">01</span><span>About</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <a class="box" href="/works/" style="--i:1"><span class="nav__num num" aria-hidden="true">02</span><span>Work</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <a class="box" href="/contact/" style="--i:2" aria-current="page"><span class="nav__num num" aria-hidden="true">03</span><span>Contact</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <a class="box nav__cv dl" href="/assets/Levon_Kostandyan_CV.pdf" download data-dl>Download CV<span class="sr"> (PDF)</span><svg class="arrow dl__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><g class="dl__arrow"><path d="M12 3v12M7 10l5 5 5-5"/></g><path class="dl__check" d="M6 11.5l4 4L18 7.5"/><path d="M5 20h14"/></svg></a>
+      <div class="nav__foot" style="--i:3">
+        <span class="label">Say hello</span>
+        <a class="u" href="mailto:levon.kostandyan@gmail.com">levon.kostandyan@gmail.com</a>
+        <a class="nav__foot-cv dl" href="/assets/Levon_Kostandyan_CV.pdf" download data-dl><span class="u">Download CV</span><span class="sr"> (PDF)</span><svg class="arrow dl__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><g class="dl__arrow"><path d="M12 3v12M7 10l5 5 5-5"/></g><path class="dl__check" d="M6 11.5l4 4L18 7.5"/><path d="M5 20h14"/></svg></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="page" tabindex="-1">
+    <section class="cta row box sec contact" data-draw>
+      <div class="cell c-8 div box cta__text" data-draw>
+        <p class="label" data-reveal>Contact</p>
+        <div class="cta__body">
+          <h1 class="display lines" data-reveal><span class="ln" style="--l:0"><span class="">Let&#x27;s talk.</span> </span></h1>
+          <p class="muted" data-reveal style="--i:2">I am always excited to meet new people, whether for work or personal reasons. If you have any questions, comments, or would want to discuss future opportunities, please contact me through the following channels.</p>
+        </div>
+        <div class="cta__email-row" data-reveal style="--i:3">
+          <a class="cta__email" href="mailto:levon.kostandyan@gmail.com"><span class="u u--on">levon.kostandyan@gmail.com</span></a>
+          <button class="copy" type="button" data-copy="levon.kostandyan@gmail.com"><svg class="copy__tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span class="copy__label" aria-live="polite">Copy</span></button>
+        </div>
+      </div>
+      <ul class="link-list c-4">
+        <li data-reveal style="--i:0"><a class="box fill" href="https://www.linkedin.com/in/levon-kostandyan-ba30267b" target="_blank" rel="noopener noreferrer" data-draw><span>LinkedIn</span><span class="sr"> (opens in a new tab)</span><svg class="arrow arrow--out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+        <li data-reveal style="--i:1"><a class="box fill" href="https://www.instagram.com/_form_live" target="_blank" rel="noopener noreferrer" data-draw><span>Instagram</span><span class="sr"> (opens in a new tab)</span><svg class="arrow arrow--out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+        <li data-reveal style="--i:2"><a class="box fill" href="https://www.behance.net/SvGravity" target="_blank" rel="noopener noreferrer" data-draw><span>Behance</span><span class="sr"> (opens in a new tab)</span><svg class="arrow arrow--out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+        <li data-reveal style="--i:3"><a class="box fill" href="https://dribbble.com/SvGravity" target="_blank" rel="noopener noreferrer" data-draw><span>Dribbble</span><span class="sr"> (opens in a new tab)</span><svg class="arrow arrow--out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+        <li data-reveal style="--i:4"><a class="box fill dl" href="/assets/Levon_Kostandyan_CV.pdf" download data-dl data-draw><span>Download CV</span><span class="sr"> (PDF)</span><svg class="arrow dl__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><g class="dl__arrow"><path d="M12 3v12M7 10l5 5 5-5"/></g><path class="dl__check" d="M6 11.5l4 4L18 7.5"/><path d="M5 20h14"/></svg></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__bar">
+      <p>&copy; <span data-year>2026</span> Levon Kostandyan</p>
+      <a class="to-top" href="#top"><span class="u">Back to top</span><svg class="arrow arrow--up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 20V4M6 10l6-6 6 6"/></svg></a>
+    </div>
+  </footer>
+</body>
+</html>

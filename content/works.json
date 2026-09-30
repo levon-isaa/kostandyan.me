@@ -1,0 +1,1300 @@
+[
+  {
+    "id": "henaket-design-system",
+    "name": "Henaket Design System",
+    "platform": "Web",
+    "nda": false,
+    "featured": true,
+    "role": "Lead UX Designer / Design System Lead",
+    "summary": "Henaket, the official design system for Armenian government digital services, which I created at ISAA and which major government agencies and vendors now use.",
+    "cover": "/images/henaket/cover.jpg",
+    "banner": "/images/henaket/banner.jpg",
+    "caseStudy": "https://henaket.web.app/react/",
+    "caseStudyLabel": "Component library",
+    "caseStudyText": "Open in Storybook",
+    "sections": [
+      {
+        "title": "Overview",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Henaket is the official design system for Armenian government digital services, established as the standard under Government Decision 153. I created it at ISAA (Information Systems Agency of Armenia), where I lead a team of three designers in a national digital transformation initiative."
+          },
+          {
+            "type": "text",
+            "value": "It gives every ministry the same tested library of components, patterns and page templates, with accessibility and interaction standards built in. Designers use it as a Figma library; developers use the React component library."
+          }
+        ]
+      },
+      {
+        "title": "The Problem",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Citizens don't experience government as separate ministries — they experience it as one government. When every service looks, behaves and fails differently, people get confused, lose trust and can't complete essential tasks."
+          },
+          {
+            "type": "text",
+            "value": "At the same time, every ministry was solving navigation, forms, error handling and accessibility on its own. That is duplicated public spending, and accessibility was usually the part that got missed."
+          }
+        ]
+      },
+      {
+        "title": "Goals",
+        "blocks": [
+          {
+            "type": "list",
+            "title": "What Henaket had to do",
+            "items": [
+              "One government, one experience: the same navigation, forms and language in every service, so people learn it once",
+              "Accessible by default: WCAG 2.1 AA built into every component, not added later",
+              "Build once: tested, ready-made parts, so teams spend their budget on the service instead of the interface",
+              "A proven model: learning from GOV.UK, Denmark and Estonia, adapted to Armenian language, context and needs"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Design Principles",
+        "blocks": [
+          {
+            "type": "list",
+            "title": "Four principles behind every decision",
+            "items": [
+              "Accessible by default — works for keyboard users, screen readers and people with low vision",
+              "Plain language — \"Save and continue\", not \"Submit\"; specific errors that tell people what to do next",
+              "Consistent everywhere — the same components and tokens, no one-off custom styles",
+              "Evidence-based — patterns are tested with Armenian citizens before they are approved"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Foundations",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Every visual property is a named design token: color, spacing and typography. A change is made once and flows to every service. Type is set in Noto Sans Armenian, spacing follows an 8px scale, and every color is checked for contrast before it enters the system."
+          },
+          {
+            "type": "image",
+            "src": "/images/henaket/work-item_foundations.jpg",
+            "alt": "Henaket foundations: color tokens (Blue 800, Teal 800, Success, Warning, Error, Focus, Grey 800 and White), the Noto Sans Armenian type scale, the 8px spacing scale, and contrast ratios of 16.1:1, 5.4:1 and 5.5:1"
+          }
+        ]
+      },
+      {
+        "title": "Components",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Buttons, inputs, date fields, alerts, error summaries, notifications, cards, tables, pagination and navigation. Each component is designed in every state (default, hover, focus, active, disabled and error), built in React with typed props, and documented with live examples in Storybook."
+          },
+          {
+            "type": "image",
+            "src": "/images/henaket/work-item_components.jpg",
+            "alt": "Henaket components: buttons, alerts, a text input in its error state, an error summary, a notification, pagination, a date input, a radio group and a payment card"
+          }
+        ]
+      },
+      {
+        "title": "Accessibility",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Armenian law requires government digital services to be accessible, and Henaket treats WCAG 2.1 AA as the minimum. Teams inherit compliance from the components instead of rediscovering it on every project."
+          },
+          {
+            "type": "list",
+            "title": "Built into every component",
+            "items": [
+              "Text contrast of at least 4.5:1",
+              "Everything reachable by keyboard, with a visible focus outline that is never removed",
+              "A visible label on every form field — never a placeholder alone",
+              "Error messages that say what went wrong and how to fix it",
+              "Layouts tested at 320px, 768px and 1024px"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Page Templates",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Ready-made page patterns for the most common government flows, from start pages, forms and confirmations to search, detail and dashboard pages. A new service starts from a working, accessible layout instead of a blank canvas. Shown here: a ministry home page, an applications list and an article page, in Armenian."
+          },
+          {
+            "type": "image",
+            "src": "/images/henaket/work-item_templates.jpg",
+            "alt": "Henaket page templates in Armenian: a ministry home page, an applications list and an article page"
+          }
+        ]
+      },
+      {
+        "title": "Governance",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "A standard only works if it applies to everyone. Henaket has three layers with different rules: foundations (tokens, spacing, grid and typography) change only through a system review, core components are used as they are, and patterns allow variants as long as the tokens stay the same."
+          },
+          {
+            "type": "text",
+            "value": "New components follow a seven-step process: check that nothing existing fits, write a proposal, team review, build in Figma, build in code, document it, and pass a final accessibility audit before release."
+          }
+        ]
+      },
+      {
+        "title": "Impact",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Henaket has been adopted by major government agencies, including the Ministry of Internal Affairs, the Ministry of Health and the Rescue Service, and by third-party vendors building public services. Together with UX improvements across eight public services, it contributed to a 34% increase in citizen engagement through better usability and accessibility."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "planty-app",
+    "name": "Planty App",
+    "platform": "iOS",
+    "nda": false,
+    "featured": true,
+    "role": "UX Researcher / UX Designer / UI Designer",
+    "summary": "Planty (iOS): a plant care app that helps new gardeners diagnose plant problems and ask experts for help, from research and wireframes to testing with users.",
+    "cover": "/images/planty/cover.jpg",
+    "banner": "/images/planty/banner.jpg",
+    "caseStudy": "https://www.behance.net/gallery/142507201/Planty-App-%28iOS%29-Case-Study",
+    "sections": [
+      {
+        "title": "Pain Points",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "The Covid-19 outbreak led a large number of people to start gardening for the first time. With this wave of new gardeners came a wave of questions about how to grow and care for plants. Lack of time and fear of failure are the two most common reasons people don't garden."
+          },
+          {
+            "type": "text",
+            "value": "New gardeners have many questions and are more likely to fail if they don't get the guidance they need. People who fail often give up gardening altogether, which means fewer gardening customers. To keep people gardening, products need to make it easier, so there is a real opportunity for better garden education that helps people save time and enjoy the experience."
+          }
+        ]
+      },
+      {
+        "title": "Possible Solution",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "A digital solution for getting help with plants and caring for them: an app that lets gardeners quickly and easily identify and fix problems with their plants."
+          },
+          {
+            "type": "text",
+            "value": "Planty is a plant care app that gives gardeners answers and support, helping them have more success in the garden."
+          }
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Keep it simple: figuring out what's wrong with a plant, and how to fix it, can be difficult."
+          },
+          {
+            "type": "text",
+            "value": "Time matters: searching for help online takes too long and doesn't always work, and it takes far too long to tell whether the advice will actually help."
+          },
+          {
+            "type": "text",
+            "value": "Real-life help: users want advice from experienced gardeners."
+          },
+          {
+            "type": "text",
+            "value": "Vegetables are popular: everyone enjoyed growing a vegetable garden."
+          },
+          {
+            "type": "text",
+            "value": "Pests and diseases are the worst: dealing with plant problems and losing a harvest is the most frustrating part."
+          }
+        ]
+      },
+      {
+        "title": "Wireframe",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "After exploring a few directions and choosing a design I liked, I built low-fidelity wireframes in Figma, focusing on the golden path scenario and the elements I thought would be most useful to users."
+          },
+          {
+            "type": "image",
+            "src": "/images/planty/work-item_wireframe.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Testing",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "I used Userberry to run test scenarios with the high-fidelity prototype, gathering feedback on the app design and core user flows and spotting usability issues."
+          },
+          {
+            "type": "text",
+            "value": "There were 10 participants in total, a mix of gardeners and designers. The scenario: you're a beginner gardener who has just started a garden, but you're having trouble with your plants and don't know what's wrong."
+          },
+          {
+            "type": "list",
+            "title": "Tasks",
+            "items": [
+              "Task 1: You have a new plant with a problem. Show me how you would find out what the problem is and how to treat it.",
+              "Task 2: You have a question about your plant that you'd like a garden expert to help with. Show me how you would ask for help.",
+              "Task 3: You've received a notification that an expert has replied to your question. Show me how you would check the message."
+            ]
+          },
+          {
+            "type": "list",
+            "title": "Feedback",
+            "items": [
+              "90% task completion: most users completed the tasks of diagnosing their plant's problem, choosing a treatment, and contacting or replying to an expert. A simpler flow with more obvious options would help the users who struggled.",
+              "80% found the app helpful: most participants found the app useful for gardening, and the \"Ask an Expert\" feature was especially well received.",
+              "25% misclick rate: users suggested simplifying the home page and plant cards. Removing duplicate controls will make the flow for adding plants clearer."
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/images/planty/work-item_testing.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Final UI",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Overall, it was a great experience. I learned a lot, especially about mobile and iOS design patterns, and got to stretch my UX muscles. My key takeaways:"
+          },
+          {
+            "type": "text",
+            "value": "Iteration produces better results. Testing the high-fidelity prototype showed that most users understood the design and found it useful, so we reached our goal. But reaching the goal doesn't mean the product is ready to ship. Iterating on the design based on user feedback, and applying solid design principles, gave users a better experience."
+          },
+          {
+            "type": "text",
+            "value": "Simplicity is crucial. On every screen and at every step, users should be able to see their next action, and redundancy should be removed. The more the UI focuses on the user's main goal, the better."
+          },
+          {
+            "type": "text",
+            "value": "Initial states are critical. Early prototypes assumed users were opening the app for the second or third time, because I needed to fill out plant cards, notifications and reminders. That only added confusion: first-run states and onboarding moments should be designed from the earliest prototypes."
+          },
+          {
+            "type": "image",
+            "src": "/images/planty/work-item_final-ui.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "roommate-app",
+    "name": "Roommate",
+    "platform": "iOS",
+    "nda": false,
+    "featured": false,
+    "role": "UX Researcher / UX Designer / UI Designer",
+    "summary": "RoomMate (iOS): an app for finding a room or a compatible roommate in a new city, from research and user flows to prototypes.",
+    "cover": "/images/roommate/cover.jpg",
+    "banner": "/images/roommate/banner.jpg",
+    "caseStudy": "https://www.behance.net/gallery/140674567/Roommate-App-%28iOS%29-Case-Study",
+    "sections": [
+      {
+        "title": "Challenges",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Moving to a new city for work or study has become very common in today's fast-paced world. I saw people struggle to find a room or a roommate in a new city: landlord contacts were often fake, or they couldn't find someone they'd be happy to live with."
+          }
+        ]
+      },
+      {
+        "title": "Possible Solution",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "RoomMate helps you find your ideal roommate, or a room within your budget, without worrying about fake landlord contacts or a roommate whose habits you're not comfortable with. You can choose a roommate after reading about their living habits, moving preferences and everything else you need to know."
+          },
+          {
+            "type": "text",
+            "value": "Finding a room is even easier: you can contact the landlord directly after checking the rent, photos and amenities. RoomMate is your first stop after moving to a new city."
+          }
+        ]
+      },
+      {
+        "title": "Research",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "I started with secondary research to identify difficulties and understand the existing conditions. Based on those inputs, I then carried out primary research to better grasp the project's aim and empathize with users."
+          },
+          {
+            "type": "text",
+            "value": "I did both qualitative and quantitative research and noticed clear patterns in the responses. I also ran online interviews with ten more people, asking the same quantitative questions as in the survey, and their answers followed the same trends."
+          },
+          {
+            "type": "image",
+            "src": "/images/roommate/work-item_research.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Define Users",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "After considering users' objectives, I combined their goals into a single main user flow. This helped me understand the steps a user takes to reach their goal as efficiently as possible, and in turn the information architecture the app needs to support that flow. The most important scenario is finding shared accommodation quickly, close to the user's workplace."
+          },
+          {
+            "type": "image",
+            "src": "/images/roommate/work-item_define-users.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Ideate",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "It's hard to gain the perspective needed to find design solutions. Productive ideation needs a dedicated space for stepping back and looking at the problem from every angle. But first, the team has to identify the right problem to solve. That comes from the Empathize stage (gaining user insights through research and observation) and the Define stage (finding patterns in those insights to form a meaningful, workable problem statement)."
+          },
+          {
+            "type": "image",
+            "src": "/images/roommate/work-item_ideate.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Design",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "In the Design phase, I was ready to design an early version of the solution. Prototyping is one of the best ways to reveal how users think and feel about a product, and it helped me resolve uncertainties about the chosen idea. Creating several prototypes takes the risk out of innovation: it lets me fail quickly instead of spending time and money on an idea that may not work in practice."
+          },
+          {
+            "type": "image",
+            "src": "/images/roommate/work-item_design.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "list-am-app",
+    "name": "List.am",
+    "platform": "Web",
+    "nda": false,
+    "featured": true,
+    "role": "UX Researcher / UX Designer / UI Designer",
+    "summary": "List.am (Web): UX research and a redesign of Armenia's largest classifieds site, focused on clearer search, filters and product pages.",
+    "cover": "/images/list-am/cover.jpg",
+    "banner": "/images/list-am/banner.jpg",
+    "caseStudy": "https://www.behance.net/gallery/145151351/Listam-%28Web%29-Case-Study",
+    "sections": [
+      {
+        "title": "About",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "List.am is Armenia's largest community and classifieds site for all kinds of goods, services and offers. The whole country knows, loves and uses it. You can buy and sell almost anything, from real estate, cars and electronics to clothing, children's items and consumer goods, as well as find services and jobs."
+          }
+        ]
+      },
+      {
+        "title": "Why I Conducted Research",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "List.am is Armenia's number one online marketplace for buying and selling, whether between businesses and customers or between the platform's own users, with listings across a wide range of product categories. Because it's one of the most recognized sites in the country, I wanted to understand how people use it, find its pain points, and improve its experience and usability."
+          }
+        ]
+      },
+      {
+        "title": "Problems",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "I observed that searching for products on the site lacks clarity, which wastes time and makes choosing and buying harder. The product page also has too much information and its calls to action go unnoticed, which makes reading tiring, confuses buyers and loses potential conversions."
+          }
+        ]
+      },
+      {
+        "title": "Value Proposition",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Improve the user experience and increase conversions by turning one of Armenia's best-known e-commerce platforms into a modern, welcoming and intuitive site, while keeping users' trust and keeping them informed."
+          }
+        ]
+      },
+      {
+        "title": "Research",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "User research aims to understand people's behaviors, needs and motivations through interviews, questionnaires, usability tests and other feedback methods. Here it helped me understand how people interact with products on the site and assess how well design solutions fit."
+          },
+          {
+            "type": "image",
+            "src": "/images/list-am/work-item_research.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Define Users",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "After the Discovery phase, I moved on to defining our users. The main goal of the Define phase is to turn the data gathered during discovery into insights, shifting from what people want, think they need or need to know, to why they want it. It's also where designers check that the team's most important assumptions hold true."
+          },
+          {
+            "type": "text",
+            "value": "The discovery phase gave me a deeper understanding of users' motivations and problems. I then wrote the functional requirements as Jobs to Be Done stories, to design a solution that meets those needs."
+          },
+          {
+            "type": "image",
+            "src": "/images/list-am/work-item_define-users.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Problems to Resolve / Value Proposition",
+        "blocks": [
+          {
+            "type": "list",
+            "title": "Problems to Resolve",
+            "items": [
+              "Unintuitive search: users get lost in too much information. It's unclear where to start looking for a product, and many searches end with nothing found, which frustrates users and costs List.am conversions.",
+              "Filters: they're imprecise, repetitive and far too long.",
+              "Confusing product page: there's no clear, visible call to action, which loses conversions, and irrelevant information distracts and confuses users.",
+              "Weak visuals and length: the product imagery doesn't encourage people to buy, and the page is so long that the most important information sits at the bottom, where most users never scroll.",
+              "No visual hierarchy: on a first visit, chaotic sections and excess content confuse new users, who soon leave. The design also feels dated and lacks clear reading levels."
+            ]
+          },
+          {
+            "type": "list",
+            "title": "Value Proposition",
+            "items": [
+              "A more modern, friendlier and more intuitive design for one of Armenia's best-known e-commerce platforms",
+              "More precise filters, so finding a product takes less time",
+              "Better post-sale contact with sellers, bringing customers back through newsletters and promotions and, above all, a positive experience",
+              "Highlighting what matters most, organizing essential information and holding users' attention"
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/images/list-am/work-item_value-proposal.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Customer Needs / Objectives & Goals",
+        "blocks": [
+          {
+            "type": "list",
+            "title": "Customer Needs",
+            "items": [
+              "Keep users active, stay current with new technology, and offer a tailored site where users feel at ease",
+              "Customer at the center: every decision puts the customer first, with competitive prices, a wider offering, a simpler buying process and easy returns",
+              "Serve different needs: more delivery options, a better experience, and a site that works for different types of users",
+              "Build trust and security",
+              "A straightforward, easy-to-use platform with the widest range of products and prices for every kind of customer, including sellers who use it as a profit-generating intermediary"
+            ]
+          },
+          {
+            "type": "list",
+            "title": "Objectives & Goals",
+            "items": [
+              "Improve the interface: redesign the UI so searching and navigating are more intuitive. This reduces friction and helps users complete tasks faster without losing sight of their main goal",
+              "Simplify the product page by cutting unnecessary and lengthy content",
+              "Make search more intuitive, with more precise filters",
+              "Plan an onboarding for everything List.am offers, much of which is currently hidden by its disorganized information architecture",
+              "Offer discounts or reward points for using the platform"
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/images/list-am/work-item_objective-and-goal.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Develop",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Based on the card sorting results and my overall research, I restructured the information architecture. I reorganized the categories and reduced their number so users don't get disoriented, gave key items more prominence in the visual hierarchy, and kept only the most relevant sections."
+          },
+          {
+            "type": "image",
+            "src": "/images/list-am/work-item_develop.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Wireframe",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "After evaluating my findings, I created low-fidelity wireframes in Figma, focusing on the golden path scenario and the elements users would find most useful."
+          },
+          {
+            "type": "text",
+            "value": "I then moved on to high-fidelity wireframes, again concentrating on the golden path and the components that would be most valuable to users."
+          },
+          {
+            "type": "image",
+            "src": "/images/list-am/work-item_wireframe.jpg"
+          }
+        ]
+      },
+      {
+        "title": "User Testing",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "User testing is a crucial step in the UX design process: evaluating a product by testing it with representative users. The most effective way to do it is through face-to-face, one-on-one sessions, which reveal users' behavior patterns, preferences and viewpoints so they can shape a more successful product. Testing early in the design phase helps ship a user-friendly product and avoid costly redesigns later. Because the goal is qualitative insight, testing doesn't need a large number of participants."
+          },
+          {
+            "type": "image",
+            "src": "/images/list-am/work-item_user-testing.jpg"
+          }
+        ]
+      },
+      {
+        "title": "UI / Design System",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "This was a challenging design, and I focused on improving the experience for the users I interviewed. I believe small but useful features make the experience more engaging and delightful. List.am is a great marketplace with a wide range of products, but the homepage had so much repetitive content that it caused clutter and confusion. I added new subheadings to separate content more clearly, updated the product page to meet current design standards, and redesigned the icons to make them more approachable and reduce clutter."
+          },
+          {
+            "type": "image",
+            "src": "/images/list-am/work-item_design-system.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "medical-app",
+    "name": "Medical App",
+    "platform": "iOS",
+    "nda": false,
+    "featured": false,
+    "role": "UX Researcher / UX Designer / UI Designer",
+    "summary": "MedicalApp (iOS): a secure app for keeping medical records in one place and sharing them with doctors, from research to the user journey.",
+    "cover": "/images/medical-app/cover.jpg",
+    "banner": "/images/medical-app/banner.jpg",
+    "caseStudy": "https://www.behance.net/gallery/185396179/Medical-App-Case-Study",
+    "sections": [
+      {
+        "title": "Pain Points",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Medical records are extremely important and sensitive documents that hold a lot of private information about a person. Both patients and doctors rely on them for accurate diagnoses. Over time, though, these documents get lost or misplaced, and vital information goes with them. It's a mess for patients and doctors alike, and it needs solving."
+          },
+          {
+            "type": "list",
+            "title": "Patients",
+            "items": [
+              "Unable to provide their medical history in an emergency",
+              "Have to carry multiple physical documents to every doctor's visit",
+              "Delayed admission because insurance details aren't available",
+              "Emergency contacts aren't available when they're urgently needed"
+            ]
+          },
+          {
+            "type": "list",
+            "title": "Doctors",
+            "items": [
+              "No access to a patient's medical history during an emergency",
+              "Delays in providing the right medical assistance",
+              "No access to a patient's OPD (outpatient department) visit history"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Possible Solution",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "MedicalApp is a healthcare app that acts as a comprehensive, secure medical partner for patients and healthcare providers. Patients keep their medical records in one place, so they can easily access them and share them with doctors. They can also keep track of their health, from doctor's appointments and medication schedules to test results, and upload records from hospitals, clinics and labs, so there's no need to carry paper copies."
+          },
+          {
+            "type": "list",
+            "title": "Key Features",
+            "items": [
+              "Patients can upload, store and access their personal, medical and health insurance records",
+              "Patients can book appointments with doctors in the app",
+              "A doctor's dashboard gives easy access to a patient's medical history, diagnoses and reports",
+              "QR and facial recognition scans let healthcare providers access a patient's records in an emergency. To protect privacy, records can only be opened with a one-time password (OTP) sent to the user or their emergency contact"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Research Insights",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "In our survey, a surprisingly high share of women aged 25 to 60, 41%, said they regularly use an online doctor consultation app for non-emergency health concerns. Men used these apps too, but far less: 28%. The results show growing acceptance of telehealth, and that these apps are becoming an important supplement to in-person visits."
+          },
+          {
+            "type": "text",
+            "value": "The study also shows a clear preference for mobile apps. Their convenience, ease of use and personalized experience suit people who want doctor consultations and medical advice at home or on the go, and they're fast becoming the preferred way for tech-savvy people to access healthcare online."
+          },
+          {
+            "type": "text",
+            "value": "Participants often struggle to keep complete, up-to-date medical records, especially when they see several doctors across different healthcare networks. As a result, they can't quickly access important information in an emergency or when seeing a new doctor, which puts their health at risk when doctors need to make fast, informed decisions. They would benefit greatly from complete, centralized and accessible health records."
+          },
+          {
+            "type": "text",
+            "value": "Participants want an app where their health information (medical records, insurance records, test results and other sensitive data) is stored securely in one place. That makes it easy for them and their doctors to access, simpler to share between providers, and gives an overview of their health over time. Given how sensitive health data is, privacy and security are paramount."
+          },
+          {
+            "type": "text",
+            "value": "The app should include doctors from a wide range of specialties, from general practitioners to cardiology, oncology, orthopedics, pediatrics and more, so it can meet the health needs of every user. Doctors from different cultural and linguistic backgrounds matter too, so patients from every background feel included."
+          },
+          {
+            "type": "text",
+            "value": "Participants also want doctors, nurses and other healthcare providers to be able to look up a patient's medical history, recent vitals, lab results and other key details quickly and easily. A clear overview of a patient's health at any moment helps clinicians give the best possible care and improves the overall patient experience."
+          }
+        ]
+      },
+      {
+        "title": "User Journey Map",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "The user journey map shows how people will interact with the app, from first discovering it, through engagement, to the extension phase. It gives a full picture of the stages users go through, so the experience can be understood from start to finish. Mapping it helped me identify the crucial interactions and touchpoints, and fine-tune the experience to improve user satisfaction and engagement."
+          },
+          {
+            "type": "image",
+            "src": "/images/medical-app/work-item_user-journey-map.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Competitive Analysis",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "We ran an in-depth competitive analysis of leading healthcare apps to understand their strengths and weaknesses and find opportunities to do better. It showed which features users want but competitors lack, and which tools users value most, so we knew what to build in. Understanding the landscape helped us avoid common pitfalls and design a solution tailored to the needs of patients and healthcare professionals."
+          },
+          {
+            "type": "image",
+            "src": "/images/medical-app/work-item_competetive-analysis.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "finfly",
+    "name": "FinFly",
+    "platform": "Web / Mobile",
+    "nda": false,
+    "featured": false,
+    "role": "UX Researcher / UX Designer / UI Designer",
+    "summary": "FinFly (Web / Mobile): UX research and design for a crypto exchange, from traders' pain points to the final design of the website and dashboard.",
+    "cover": "/images/finfly/cover.jpg",
+    "banner": "/images/finfly/banner.jpg",
+    "caseStudy": null,
+    "sections": [
+      {
+        "title": "About",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "FinFly is a crypto exchange owned and operated by Kinetic Finance Limited, registered in the Republic of Lithuania. The company fully complies with EU standards and is regulated by the Financial Crime Investigation Service (FCIS). Lithuania is a recognized European fintech center, with favorable conditions for crypto businesses and their clients."
+          },
+          {
+            "type": "text",
+            "value": "FinFly's mission is to give everyone the information and tools they need to invest successfully in the crypto market, closing the information gap between retail investors and professional crypto traders."
+          }
+        ]
+      },
+      {
+        "title": "Key Features",
+        "blocks": [
+          {
+            "type": "list",
+            "title": "What FinFly offers",
+            "items": [
+              "Simplicity: a user-friendly design and a minimum investment of just $10, so anyone can start working with crypto in a matter of minutes",
+              "Security: a reliable platform operating in more than 50 countries under a license from the Republic of Lithuania, fully compliant with EU standards",
+              "Service 24/7: transactions are processed as quickly as possible, and the support team is always available"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pain Points",
+        "blocks": [
+          {
+            "type": "list",
+            "title": "What users struggle with",
+            "items": [
+              "Verification: the KYC (know your customer) process is slow and cumbersome, which can delay trading",
+              "Security: users worry about the safety of their funds and personal data, and want to know the platform uses two-factor authentication, encryption and insurance against hacking and theft",
+              "Technical issues: slow loading, crashes and error messages, caused by the platform's infrastructure or by the user's own connection and device",
+              "Low liquidity: it's hard to buy or sell assets at the desired price",
+              "Support: help is hard to reach or unhelpful, which leads to frustration and negative reviews",
+              "Complexity: the interface is confusing or overwhelming, especially for people new to crypto, which can put them off or lead to mistakes",
+              "High fees: trading fees eat into profits and make trading unaffordable for smaller investors, and hidden charges, such as withdrawal or inactivity fees, make it worse",
+              "Limited coins: if a preferred cryptocurrency isn't supported, users switch to a platform with a wider choice"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Possible Solution",
+        "blocks": [
+          {
+            "type": "list",
+            "title": "How the platform can address them",
+            "items": [
+              "Simpler verification: streamline the KYC requirements, give clear instructions, and speed things up with automated tools such as facial recognition or document scanning",
+              "Visible security: use multi-factor authentication, encryption and regular security audits, explain them clearly, and offer insurance against hacking and theft",
+              "Reliable performance: monitor the platform, fix technical issues promptly, give clear error messages and troubleshooting steps, and offer a mobile app for faster access",
+              "More liquidity: partner with other exchanges or liquidity providers, and encourage trading with incentives such as lower fees",
+              "Dedicated support: a 24/7 team reachable by email, live chat and phone, with fast responses, plus an FAQ section and guides for common issues",
+              "A simpler interface: clear, intuitive design, educational resources such as video tutorials and user guides, and a demo account or sandbox for practice trading",
+              "Fair fees: reduce them where possible, offer discounts for high-volume or long-term traders, and be transparent about every fee",
+              "More coins: add new cryptocurrencies regularly based on market research, and let users suggest and vote on the next ones"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Final Design",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "The final design brings these solutions together in a crypto exchange built around its users' concerns."
+          },
+          {
+            "type": "text",
+            "value": "Verification is quick and easy, so new users can get started right away, and multi-factor authentication, encryption and regular security audits protect their funds and personal information. The platform is built for speed and reliability, and when something does go wrong, the support team is available 24/7."
+          },
+          {
+            "type": "text",
+            "value": "Users can choose from a wide range of cryptocurrencies, selected for liquidity and demand. Fees are transparent and competitive, with discounts for high-volume traders, and a clear, intuitive interface, educational resources and a demo account help newcomers get started. The goal: crypto trading that is accessible, secure and enjoyable for everyone."
+          },
+          {
+            "type": "image",
+            "src": "/images/finfly/work-item_final-design.jpg",
+            "alt": "FinFly screens, in Russian: the landing page, the wallet with balances and transaction history, structured notes, crypto insurance with a calculator and certificates, and the profile with two-factor authentication, active sessions and an access log"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "keepsme",
+    "name": "KeepsMe",
+    "platform": "Web / Mobile",
+    "nda": false,
+    "featured": false,
+    "role": "UX Researcher / UX Designer / UI Designer",
+    "summary": "KeepsMe (Web / Mobile): a voucher platform for Armenian tourism during the pandemic, with discounts for travelers and income in advance for local businesses.",
+    "cover": "/images/keepsme/cover.jpg",
+    "banner": "/images/keepsme/banner.jpg",
+    "caseStudy": null,
+    "sections": [
+      {
+        "title": "Overview",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "KeepsMe's mission is to support the sustainable development of tourism in Armenia, with a platform that works for both travelers and businesses. We strongly believe that sustainable tourism makes Armenia a better place."
+          },
+          {
+            "type": "text",
+            "value": "Over the past decade, tourism has been one of the fastest-growing industries in Armenia, and its infrastructure has grown with it. Small and medium businesses such as hotels, restaurants, and travel and adventure agencies have become a valuable part of the experience for a growing number of tourists."
+          },
+          {
+            "type": "text",
+            "value": "2020 was expected to bring an unprecedented increase in international arrivals, with many new flights scheduled to Yerevan and Gyumri, including low-cost airlines such as Ryanair and Wizz Air. Then the travel restrictions of the pandemic changed everything for the industry."
+          }
+        ]
+      },
+      {
+        "title": "The Platform",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "The new reality called for a modern approach: keeping tourism stable, existing businesses running and Armenia attractive as a destination. To get there, we quickly built a new travel tech tool."
+          },
+          {
+            "type": "list",
+            "title": "What KeepsMe offers",
+            "items": [
+              "For travelers: one voucher platform with attractive discounts from a wide range of Armenian brands. Vouchers stay valid for up to 3 years, so future travel plans stay flexible, and payments are fast and secure",
+              "For local businesses: income in advance, with the service provided later, when things are back to normal. There are no monthly or sign-up fees, and small businesses benefit from the platform's sales tools and marketing campaigns"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pain Points",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Users' main frustrations with digital voucher platforms, in their own words:"
+          },
+          {
+            "type": "list",
+            "title": "What users told us",
+            "items": [
+              "\"I find it frustrating when a voucher platform has a limited choice of retailers and products. It feels restrictive, and I may not find what I need.\"",
+              "\"Sometimes the platform is slow or unresponsive, which is especially frustrating when I'm trying to make a purchase. It wastes my time and makes me hesitant to use it again.\"",
+              "\"When the platform is confusing or hard to navigate, finding what I need is overwhelming, and I may abandon my purchase altogether.\"",
+              "\"I worry about the security of my personal information and payment details. I want to feel confident they're protected from breaches and cyber attacks.\""
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Possible Solution",
+        "blocks": [
+          {
+            "type": "list",
+            "title": "How a voucher platform can address them",
+            "items": [
+              "More choice: partner with more retailers, and offer personalized recommendations based on past purchases and preferences",
+              "Speed: improve the technical infrastructure and servers for smooth, fast transactions, and offer several payment options so a network issue doesn't mean a failed payment",
+              "Ease of use: an intuitive interface that's easy to navigate, with filters and search to find things quickly",
+              "Security: stronger data encryption, compliance with data protection standards, and clear, transparent information about how users' data is protected"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Design System",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "In September 2021, we started creating a design system and integrating it across all of the company's products. Until then, each product had its own UI kit, which worked but brought limitations and risks, so a centralized design system was needed. I was selected to lead this work."
+          },
+          {
+            "type": "list",
+            "title": "My contributions",
+            "items": [
+              "Led the active phase of work on the company design system",
+              "Created and maintained the design system and interface guidelines",
+              "Took an active role in planning and managing the development team's work",
+              "Integrated the design system into the company's products, from strategic planning and brainstorming to communication with external teams"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Achievements",
+        "blocks": [
+          {
+            "type": "list",
+            "title": "What the platform delivers",
+            "items": [
+              "A list of places offering vouchers, each with a detailed description and usage rules",
+              "A rating system, useful for tourists and for foreigners living in Armenia",
+              "A clean summary of the most relevant information, with quick access to wallets, stats and transactions",
+              "Scalable, end-to-end management in a table view: dealer onboarding, hierarchy management and custom business rules",
+              "Yearly, monthly and daily reports, exported in the format that works best for each partner",
+              "A separate portal for partners, with extra information to help them integrate with the system"
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/images/keepsme/work-item_achievements.jpg",
+            "alt": "KeepsMe screens: the vouchers table, voucher details with the redemption history, voucher cards from partner restaurants, and the vendor profile editor with photos and videos"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hca-healthcare-app",
+    "name": "HCA Healthcare",
+    "platform": "Web",
+    "nda": true,
+    "featured": false,
+    "role": "UX Designer / UI Designer",
+    "summary": "HCA Healthcare Careers (Web): UX design for the careers site of one of the largest US healthcare providers, from research and wireframes to the design system.",
+    "cover": "/images/hca/cover.jpg",
+    "banner": "/images/hca/banner.jpg",
+    "caseStudy": null,
+    "sections": [
+      {
+        "title": "About",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "HCA Healthcare is one of the largest healthcare providers in the United States. Founded in 1968 and based in Nashville, Tennessee, it runs around 186 hospitals and 2,000 sites of care, from surgery centers and emergency rooms to urgent care centers and physician clinics, across 21 US states and the United Kingdom."
+          },
+          {
+            "type": "text",
+            "value": "I worked on HCA Healthcare Careers, the website where nurses, physicians and other professionals explore careers and apply for jobs across HCA's hospitals and facilities. I was part of a large international team at EPAM Systems, working as a UX Designer."
+          }
+        ]
+      },
+      {
+        "title": "The Challenge",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "At HCA's scale, the careers site has to connect thousands of openings, hundreds of facilities and many job families with very different people: nursing students looking for their first role, experienced clinicians, physicians, and military veterans moving into civilian careers."
+          },
+          {
+            "type": "text",
+            "value": "Each of them needs to find relevant roles quickly, understand what a program or location offers, and feel confident enough to apply."
+          }
+        ]
+      },
+      {
+        "title": "My Role",
+        "blocks": [
+          {
+            "type": "list",
+            "title": "What I did",
+            "items": [
+              "User research to inform UX decisions",
+              "Wireframes for key page types, from job search to program and location pages",
+              "Design documentation for the development team",
+              "Contributions to the design system, so new pages stay consistent"
+            ]
+          },
+          {
+            "type": "text",
+            "value": "The project is under NDA, so the details here are kept at a high level."
+          }
+        ]
+      },
+      {
+        "title": "Search and Discovery",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Search sits at the top of every page: candidates can look for jobs by title, keyword or MOS (military occupation code) and narrow them down by location. The main navigation offers other ways in, by job family, program, event or location, and candidates can save jobs or join the talent network to come back later."
+          }
+        ]
+      },
+      {
+        "title": "Programs and Locations",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Program pages, such as the Nurse Residency Program, open with what the program is and a direct link to its openings, then break the benefits into short, scannable points: clinical training, learning resources and clear career paths."
+          },
+          {
+            "type": "text",
+            "value": "Location pages show how many openings there are in each state and list the facilities behind them, with addresses and contact details, so candidates can decide where they want to work."
+          }
+        ]
+      },
+      {
+        "title": "Design System",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "The site covers many page types, from search results and job families to programs, events and locations, so consistency mattered. I documented the designs for developers and contributed reusable components to the design system, keeping new pages consistent and responsive across desktop, tablet and mobile."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "inecobank-app",
+    "name": "Inecobank",
+    "platform": "iOS",
+    "nda": true,
+    "featured": false,
+    "role": "UX Researcher / UX Designer / UI Designer",
+    "summary": "InecoMobile (iOS): UX research and design for Inecobank's mobile banking app, including everyday transfers and QR payments.",
+    "cover": "/images/inecobank/cover.jpg",
+    "banner": "/images/inecobank/banner.jpg",
+    "caseStudy": null,
+    "sections": [
+      {
+        "title": "About",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "As one of the leading banks in the South Caucasus, Inecobank CJSC offers a full range of banking services, including digital banking, to individuals, SMEs and corporate clients."
+          },
+          {
+            "type": "text",
+            "value": "Founded on February 7, 1996, the bank serves more than 520,000 customers across Armenia and has brought industry-leading digital banking solutions to the Armenian market."
+          },
+          {
+            "type": "text",
+            "value": "It has correspondent relationships with a number of leading banks, and since 1998 it has worked with more than 30 major international financial organizations."
+          }
+        ]
+      },
+      {
+        "title": "Digital Solution",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "In 2022, Inecobank introduced Apple Pay for iPhone and Apple Watch users: an easier, faster and safer way to make cashless payments worldwide."
+          },
+          {
+            "type": "text",
+            "value": "In 2021, it launched paylater, bringing the buy now, pay later trend to Armenia: customers buy now and pay in installments with no additional fees."
+          },
+          {
+            "type": "text",
+            "value": "In 2021, it introduced NFC payments, letting customers make fast, contactless payments with their Android smartphones."
+          },
+          {
+            "type": "text",
+            "value": "In 2019, it launched \"Transfer to Card\", which lets InecoOnline and InecoMobile users make account-to-card and card-to-card transfers to cards issued by banks in the ArCa system."
+          },
+          {
+            "type": "text",
+            "value": "In 2018, it became the first bank in Armenia to launch a smartphone payment system, InecoPay."
+          },
+          {
+            "type": "text",
+            "value": "In 2017, it was the first to offer fully automated consumer lending through its mobile and online apps, so loans are available 24/7."
+          },
+          {
+            "type": "text",
+            "value": "In 2014, it launched InecoMobile, its mobile banking app, which is now one of the leading financial apps in the country."
+          },
+          {
+            "type": "text",
+            "value": "In 2012, with the launch of InecoOnline, it became one of the first banks to offer 24/7 banking services."
+          },
+          {
+            "type": "text",
+            "value": "In 2009, it digitized and fully automated its point-of-sale loans, cutting approval time from 3–4 days to a few minutes."
+          }
+        ]
+      },
+      {
+        "title": "Responsibilities",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "I worked on InecoMobile, Inecobank's mobile banking app, as a UX researcher and UX/UI designer."
+          },
+          {
+            "type": "list",
+            "title": "What I did",
+            "items": [
+              "Researched how customers use the app through surveys, interviews and observation, and turned the findings into patterns and priorities",
+              "Structured the app's information architecture so everyday tasks are quick to find",
+              "Designed everyday banking flows (transfers, transfers to card, currency exchange, deposit replenishment and loan repayments), with templates and periodic payments for repeat transactions",
+              "Built wireframes and interactive prototypes and tested them with users"
+            ]
+          },
+          {
+            "type": "text",
+            "value": "QR payments were a key feature: customers pay by scanning a code with their phone, so the flow had to be quick, easy and secure."
+          },
+          {
+            "type": "list",
+            "title": "What QR payments needed",
+            "items": [
+              "A fast, reliable in-app scanner, plus a personal QR code for receiving payments",
+              "Two-factor authentication with biometrics or a PIN",
+              "A warning about fraudulent QR codes before any payment goes through",
+              "Clear, step-by-step guidance with real-time feedback on the amount, recipient, date and time"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "novartis-app",
+    "name": "Novartis",
+    "platform": "Web",
+    "nda": true,
+    "featured": false,
+    "role": "UX Researcher / UX Designer / UI Designer",
+    "summary": "data42 at Novartis (Web): UX research and design for tools scientists use to request Real World Data, helping cut their research time by 44%.",
+    "cover": "/images/novartis/cover.jpg",
+    "banner": "/images/novartis/banner.jpg",
+    "caseStudy": null,
+    "sections": [
+      {
+        "title": "About",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "data42 is a strategic Novartis initiative to build a next-generation platform for data analytics."
+          }
+        ]
+      },
+      {
+        "title": "Responsibilities",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "On data42, I designed tools that Novartis scientists use to find and request Real World Data, including the Investigations App and the Medical Code List Builder (MCLB)."
+          },
+          {
+            "type": "list",
+            "title": "What I did",
+            "items": [
+              "Planned and ran interviews with scientists who work with Real World Data",
+              "Documented the findings on Confluence and prioritized pain points with the team",
+              "Mapped the user journey with stakeholders and developers to close knowledge gaps about the system",
+              "Designed request and tracking flows, such as the four-step New Investigation Request (select data, provide details, select audience, submit) and tracking each request through approval",
+              "Created new layouts and kept the Blueprint-based design system up to date"
+            ]
+          },
+          {
+            "type": "text",
+            "value": "This work helped Novartis scientists reduce their research time by 44% through better usability and a more efficient workflow."
+          }
+        ]
+      },
+      {
+        "title": "User Research",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "In user interviews, I set out to understand the typical tasks people perform with Real World Data and the specific challenges they face using the Medical Code List Builder (MCLB). I asked about their workflow, the tools they use and their pain points."
+          },
+          {
+            "type": "text",
+            "value": "The interviews revealed common themes and patterns in users' experiences. I used these insights to improve the design and functionality of MCLB and make it more intuitive for people who work with Real World Data."
+          }
+        ]
+      },
+      {
+        "title": "Interview Analysis",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "I documented observations and soundbites on a Confluence page to share the interview findings with my team. Prioritizing users' pain points let us focus on the parts of the tool that would have the biggest impact on the experience."
+          },
+          {
+            "type": "text",
+            "value": "I also noted where users were satisfied and gave positive feedback. That matters just as much: it shows what's working, so we can build on those strengths. With a clear picture of users' needs and pain points, we could make informed decisions and create a more effective, user-friendly Medical Code List Builder."
+          }
+        ]
+      },
+      {
+        "title": "User Journey",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "A user journey map was a crucial step in closing knowledge gaps about the system, from both the stakeholders' and the developers' perspectives. Visualizing the main flows and users' pain points gave us a deeper understanding of the experience and showed where it could improve."
+          },
+          {
+            "type": "text",
+            "value": "Presenting the map to stakeholders and developers aligned everyone's understanding of the system and its shortcomings, and opened a discussion about possible solutions and priorities. It became a useful tool for communication between teams, leading to a more effective and user-friendly Medical Code List Builder."
+          }
+        ]
+      },
+      {
+        "title": "Design System Support",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Working with a design system based on the Blueprint framework kept design and development consistent and efficient. I kept the design system up to date as new features were implemented, so every component stayed in sync with the latest standards and guidelines."
+          },
+          {
+            "type": "text",
+            "value": "Beyond the existing components, I created new layouts to make the system more flexible, designed to be intuitive and easy to use. Building on the design system and adding layouts where needed streamlined design and development, and made the Medical Code List Builder more cohesive and user-friendly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spvrkd",
+    "name": "SPVRKD",
+    "platform": "iOS",
+    "nda": true,
+    "featured": false,
+    "role": "UI Designer",
+    "summary": "SPVRKD (iOS): UI design for a platform driving sustainable change in the fashion industry, in the discovery phase of SPVRKD 1.0 and parallel development.",
+    "cover": "/images/spvrkd/cover.jpg",
+    "banner": "/images/spvrkd/banner.jpg",
+    "caseStudy": null,
+    "sections": [
+      {
+        "title": "About",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "SPVRKD is the creative spark for real, sustainable change in the fashion industry, unlocking the full potential of product makers, creators, collaborators and global communities."
+          },
+          {
+            "type": "text",
+            "value": "I worked on the discovery phase of SPVRKD 1.0 and on parallel development as a UI designer, as part of a large international team at EPAM Systems. The project is under NDA, so the details here are kept at a high level."
+          }
+        ]
+      },
+      {
+        "title": "Responsibilities",
+        "blocks": [
+          {
+            "type": "list",
+            "title": "What I did",
+            "items": [
+              "Took a leading role in establishing a consistent visual language and design approach across products and platforms",
+              "Worked with stakeholders and cross-functional teams so the design system met the needs of the business, the users and the development team",
+              "Took part in workshops to build collaboration and alignment across teams",
+              "Supported the development team with wireframes, prototypes and high-fidelity mockups that follow the design system guidelines"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Challenges",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Tight deadlines: I kept the work on schedule by prioritizing tasks, setting realistic timelines, breaking the work into manageable pieces and checking in with the team regularly, so everyone stayed on track."
+          },
+          {
+            "type": "text",
+            "value": "Complex user flows: they need a deep understanding of users' needs and behaviors to become interfaces that are intuitive and easy to use. I relied on user research, personas and user journeys, then on user testing, prototyping and iteration, and worked closely with cross-functional teams so everyone understood the flows and had input into the design."
+          }
+        ]
+      },
+      {
+        "title": "Stakeholder Engagement",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Involving stakeholders in decisions is about more than gathering feedback: it builds relationships and trust. When stakeholders see that their concerns and ideas are heard, they take ownership of the project's goals and outcomes."
+          },
+          {
+            "type": "text",
+            "value": "Stakeholders from different backgrounds also bring up risks, challenges and opportunities the project team might miss, which leads to more inclusive and effective solutions. It takes time, resources and coordination, and interests can conflict, but it leads to more sustainable outcomes that meet the needs of everyone involved."
+          }
+        ]
+      },
+      {
+        "title": "Final UI",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "In fashion, the look and feel of an app matters as much as how it works. Users expect apps that are functional, visually appealing and fashionable, and also fast and reliable."
+          },
+          {
+            "type": "text",
+            "value": "I worked closely with the developers from the first wireframes to the final polished UI, and kept up with the latest design trends, so the app is both beautiful and intuitive."
+          }
+        ]
+      }
+    ]
+  }
+]

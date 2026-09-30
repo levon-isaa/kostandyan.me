@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work — Levon Kostandyan</title>
+  <meta name="description" content="UX case studies by Levon Kostandyan: Henaket Design System, Planty App, Roommate, List.am, Medical App, FinFly, KeepsMe, HCA Healthcare, Inecobank, Novartis, SPVRKD.">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Levon Kostandyan">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Work — Levon Kostandyan">
+  <meta property="og:description" content="UX case studies by Levon Kostandyan: Henaket Design System, Planty App, Roommate, List.am, Medical App, FinFly, KeepsMe, HCA Healthcare, Inecobank, Novartis, SPVRKD.">
+  <meta property="og:image" content="https://kostandyan.me/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Levon Kostandyan — Lead UX Designer, designing complicated systems and huge data">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Levon Kostandyan — Lead UX Designer, designing complicated systems and huge data">
+  <link rel="canonical" href="https://kostandyan.me/works/">
+  <meta property="og:url" content="https://kostandyan.me/works/">
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Chrome: load a page in the background when its link is hovered, so the
+       click (and the page transition) is instant. Other browsers ignore this. -->
+  <script type="speculationrules">
+    {"prerender": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": "/assets/*"}}, {"not": {"href_matches": "/images/*"}}]}, "eagerness": "moderate"}]}
+  </script>
+  <script>
+    // Reveal targets start hidden only when JS runs. If site.js never loads,
+    // drop the class so nothing stays invisible.
+    var d = document.documentElement;
+    d.classList.add("js");
+    setTimeout(function () {
+      if (!d.classList.contains("reveal-ready")) d.classList.remove("js");
+    }, 3000);
+    // Arriving through a page transition: show what's on screen as part of it
+    // (html.arriving); site.js settles things once the transition ends. This
+    // has to live here, before the page first paints.
+    var arrived = function () {
+      d.setAttribute("data-arrived", "");
+      window.dispatchEvent(new Event("arrived"));
+    };
+    window.addEventListener("pagereveal", function (e) {
+      if (!e.viewTransition) return;
+      d.classList.add("arriving");
+      e.viewTransition.finished.then(arrived, arrived);
+    });
+    // Browsers without cross-page transitions (Firefox, older Safari) get the
+    // same fade-and-rise by hand: site.js fades the old page out on click, and
+    // the next page fades in here if we came from one of our own links.
+    if (!("CSSViewTransitionRule" in window) && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      d.classList.add("vt-fallback");
+      try {
+        if (sessionStorage.getItem("vt-nav")) {
+          sessionStorage.removeItem("vt-nav");
+          d.classList.add("vt-enter", "arriving");
+          setTimeout(arrived, 700);
+        }
+      } catch (err) {}
+    }
+  </script>
+  <script src="/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header box">
+    <span class="progress" aria-hidden="true"></span>
+    <a class="brand" href="/">Levon Kostandyan <span class="brand__role">Lead UX Designer</span></a>
+    <button class="menu-btn box" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr">Menu</span><i></i><i></i>
+    </button>
+    <nav id="site-nav" class="nav" aria-label="Main">
+      <a class="box" href="/about/" style="--i:0"><span class="nav__num num" aria-hidden="true">01</span><span>About</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <a class="box" href="/works/" style="--i:1" aria-current="page"><span class="nav__num num" aria-hidden="true">02</span><span>Work</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <a class="box" href="/contact/" style="--i:2"><span class="nav__num num" aria-hidden="true">03</span><span>Contact</span><svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <a class="box nav__cv dl" href="/assets/Levon_Kostandyan_CV.pdf" download data-dl>Download CV<span class="sr"> (PDF)</span><svg class="arrow dl__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><g class="dl__arrow"><path d="M12 3v12M7 10l5 5 5-5"/></g><path class="dl__check" d="M6 11.5l4 4L18 7.5"/><path d="M5 20h14"/></svg></a>
+      <div class="nav__foot" style="--i:3">
+        <span class="label">Say hello</span>
+        <a class="u" href="mailto:levon.kostandyan@gmail.com">levon.kostandyan@gmail.com</a>
+        <a class="nav__foot-cv dl" href="/assets/Levon_Kostandyan_CV.pdf" download data-dl><span class="u">Download CV</span><span class="sr"> (PDF)</span><svg class="arrow dl__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><g class="dl__arrow"><path d="M12 3v12M7 10l5 5 5-5"/></g><path class="dl__check" d="M6 11.5l4 4L18 7.5"/><path d="M5 20h14"/></svg></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="page" tabindex="-1">
+    <section class="page-head row box sec" data-draw>
+      <div class="cell c-8 div box" data-draw>
+        <p class="label" data-reveal>Work</p>
+        <h1 class="display lines" data-reveal><span class="ln" style="--l:0"><span class="">Selected work</span> </span></h1>
+      </div>
+      <div class="cell c-4">
+        <p class="label" data-reveal>Case studies</p>
+        <p class="page-head__count num" data-reveal style="--i:1">11</p>
+      </div>
+    </section>
+
+    <div class="cards box sec" data-draw>
+      <a class="card box" href="/works/henaket-design-system/" data-draw>
+        <div class="media" data-reveal style="--i:0"><img src="/images/henaket/cover.jpg" srcset="/images/henaket/cover-720w.jpg 720w, /images/henaket/cover-1080w.jpg 1080w, /images/henaket/cover.jpg 1424w" sizes="(max-width: 800px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="" width="1424" height="1468" loading="lazy" decoding="async"><span class="card__info" aria-hidden="true"><span style="--k:0"><span class="label">My role</span><span class="card__role">Lead UX Designer / Design System Lead</span></span><span class="card__cta" style="--k:1">View case study<svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></span></div>
+        <span class="card__meta" data-reveal style="--i:0">
+          <span class="card__title">Henaket Design System<sup class="card__index num">01</sup></span>
+          <span class="tags"><span class="tag">Web</span></span>
+        </span>
+      </a>
+      <a class="card box" href="/works/planty-app/" data-draw>
+        <div class="media" data-reveal style="--i:1"><img src="/images/planty/cover.jpg" srcset="/images/planty/cover-720w.jpg 720w, /images/planty/cover-1080w.jpg 1080w, /images/planty/cover.jpg 1424w" sizes="(max-width: 800px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="" width="1424" height="1468" loading="lazy" decoding="async"><span class="card__info" aria-hidden="true"><span style="--k:0"><span class="label">My role</span><span class="card__role">UX Researcher / UX Designer / UI Designer</span></span><span class="card__cta" style="--k:1">View case study<svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></span></div>
+        <span class="card__meta" data-reveal style="--i:1">
+          <span class="card__title">Planty App<sup class="card__index num">02</sup></span>
+          <span class="tags"><span class="tag">iOS</span></span>
+        </span>
+      </a>
+      <a class="card box" href="/works/roommate-app/" data-draw>
+        <div class="media" data-reveal style="--i:2"><img src="/images/roommate/cover.jpg" srcset="/images/roommate/cover-720w.jpg 720w, /images/roommate/cover-1080w.jpg 1080w, /images/roommate/cover.jpg 1424w" sizes="(max-width: 800px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="" width="1424" height="1468" loading="lazy" decoding="async"><span class="card__info" aria-hidden="true"><span style="--k:0"><span class="label">My role</span><span class="card__role">UX Researcher / UX Designer / UI Designer</span></span><span class="card__cta" style="--k:1">View case study<svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></span></div>
+        <span class="card__meta" data-reveal style="--i:2">
+          <span class="card__title">Roommate<sup class="card__index num">03</sup></span>
+          <span class="tags"><span class="tag">iOS</span></span>
+        </span>
+      </a>
+      <a class="card box" href="/works/list-am-app/" data-draw>
+        <div class="media" data-reveal style="--i:0"><img src="/images/list-am/cover.jpg" srcset="/images/list-am/cover-720w.jpg 720w, /images/list-am/cover-1080w.jpg 1080w, /images/list-am/cover.jpg 1424w" sizes="(max-width: 800px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="" width="1424" height="1468" loading="lazy" decoding="async"><span class="card__info" aria-hidden="true"><span style="--k:0"><span class="label">My role</span><span class="card__role">UX Researcher / UX Designer / UI Designer</span></span><span class="card__cta" style="--k:1">View case study<svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></span></div>
+        <span class="card__meta" data-reveal style="--i:0">
+          <span class="card__title">List.am<sup class="card__index num">04</sup></span>
+          <span class="tags"><span class="tag">Web</span></span>
+        </span>
+      </a>
+      <a class="card box" href="/works/medical-app/" data-draw>
+        <div class="media" data-reveal style="--i:1"><img src="/images/medical-app/cover.jpg" srcset="/images/medical-app/cover-720w.jpg 720w, /images/medical-app/cover-1080w.jpg 1080w, /images/medical-app/cover.jpg 1424w" sizes="(max-width: 800px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="" width="1424" height="1468" loading="lazy" decoding="async"><span class="card__info" aria-hidden="true"><span style="--k:0"><span class="label">My role</span><span class="card__role">UX Researcher / UX Designer / UI Designer</span></span><span class="card__cta" style="--k:1">View case study<svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></span></div>
+        <span class="card__meta" data-reveal style="--i:1">
+          <span class="card__title">Medical App<sup class="card__index num">05</sup></span>
+          <span class="tags"><span class="tag">iOS</span></span>
+        </span>
+      </a>
+      <a class="card box" href="/works/finfly/" data-draw>
+        <div class="media" data-reveal style="--i:2"><img src="/images/finfly/cover.jpg" srcset="/images/finfly/cover-720w.jpg 720w, /images/finfly/cover-1080w.jpg 1080w, /images/finfly/cover.jpg 1424w" sizes="(max-width: 800px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="" width="1424" height="1468" loading="lazy" decoding="async"><span class="card__info" aria-hidden="true"><span style="--k:0"><span class="label">My role</span><span class="card__role">UX Researcher / UX Designer / UI Designer</span></span><span class="card__cta" style="--k:1">View case study<svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></span></div>
+        <span class="card__meta" data-reveal style="--i:2">
+          <span class="card__title">FinFly<sup class="card__index num">06</sup></span>
+          <span class="tags"><span class="tag">Web / Mobile</span></span>
+        </span>
+      </a>
+      <a class="card box" href="/works/keepsme/" data-draw>
+        <div class="media" data-reveal style="--i:0"><img src="/images/keepsme/cover.jpg" srcset="/images/keepsme/cover-720w.jpg 720w, /images/keepsme/cover-1080w.jpg 1080w, /images/keepsme/cover.jpg 1424w" sizes="(max-width: 800px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="" width="1424" height="1468" loading="lazy" decoding="async"><span class="card__info" aria-hidden="true"><span style="--k:0"><span class="label">My role</span><span class="card__role">UX Researcher / UX Designer / UI Designer</span></span><span class="card__cta" style="--k:1">View case study<svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></span></div>
+        <span class="card__meta" data-reveal style="--i:0">
+          <span class="card__title">KeepsMe<sup class="card__index num">07</sup></span>
+          <span class="tags"><span class="tag">Web / Mobile</span></span>
+        </span>
+      </a>
+      <a class="card box" href="/works/hca-healthcare-app/" data-draw>
+        <div class="media" data-reveal style="--i:1"><img src="/images/hca/cover.jpg" srcset="/images/hca/cover-720w.jpg 720w, /images/hca/cover-1080w.jpg 1080w, /images/hca/cover.jpg 1424w" sizes="(max-width: 800px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="" width="1424" height="1468" loading="lazy" decoding="async"><span class="card__info" aria-hidden="true"><span style="--k:0"><span class="label">My role</span><span class="card__role">UX Designer / UI Designer</span></span><span class="card__cta" style="--k:1">View case study<svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></span></div>
+        <span class="card__meta" data-reveal style="--i:1">
+          <span class="card__title">HCA Healthcare<sup class="card__index num">08</sup></span>
+          <span class="tags"><span class="tag">Web</span><span class="tag">NDA</span></span>
+        </span>
+      </a>
+      <a class="card box" href="/works/inecobank-app/" data-draw>
+        <div class="media" data-reveal style="--i:2"><img src="/images/inecobank/cover.jpg" srcset="/images/inecobank/cover-720w.jpg 720w, /images/inecobank/cover-1080w.jpg 1080w, /images/inecobank/cover.jpg 1424w" sizes="(max-width: 800px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="" width="1424" height="1468" loading="lazy" decoding="async"><span class="card__info" aria-hidden="true"><span style="--k:0"><span class="label">My role</span><span class="card__role">UX Researcher / UX Designer / UI Designer</span></span><span class="card__cta" style="--k:1">View case study<svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></span></div>
+        <span class="card__meta" data-reveal style="--i:2">
+          <span class="card__title">Inecobank<sup class="card__index num">09</sup></span>
+          <span class="tags"><span class="tag">iOS</span><span class="tag">NDA</span></span>
+        </span>
+      </a>
+      <a class="card box" href="/works/novartis-app/" data-draw>
+        <div class="media" data-reveal style="--i:0"><img src="/images/novartis/cover.jpg" srcset="/images/novartis/cover-720w.jpg 720w, /images/novartis/cover-1080w.jpg 1080w, /images/novartis/cover.jpg 1424w" sizes="(max-width: 800px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="" width="1424" height="1468" loading="lazy" decoding="async"><span class="card__info" aria-hidden="true"><span style="--k:0"><span class="label">My role</span><span class="card__role">UX Researcher / UX Designer / UI Designer</span></span><span class="card__cta" style="--k:1">View case study<svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></span></div>
+        <span class="card__meta" data-reveal style="--i:0">
+          <span class="card__title">Novartis<sup class="card__index num">10</sup></span>
+          <span class="tags"><span class="tag">Web</span><span class="tag">NDA</span></span>
+        </span>
+      </a>
+      <a class="card box" href="/works/spvrkd/" data-draw>
+        <div class="media" data-reveal style="--i:1"><img src="/images/spvrkd/cover.jpg" srcset="/images/spvrkd/cover-720w.jpg 720w, /images/spvrkd/cover-1080w.jpg 1080w, /images/spvrkd/cover.jpg 1424w" sizes="(max-width: 800px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="" width="1424" height="1468" loading="lazy" decoding="async"><span class="card__info" aria-hidden="true"><span style="--k:0"><span class="label">My role</span><span class="card__role">UI Designer</span></span><span class="card__cta" style="--k:1">View case study<svg class="arrow arrow--right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></span></div>
+        <span class="card__meta" data-reveal style="--i:1">
+          <span class="card__title">SPVRKD<sup class="card__index num">11</sup></span>
+          <span class="tags"><span class="tag">iOS</span><span class="tag">NDA</span></span>
+        </span>
+      </a>
+      <div class="card card--more box" data-draw>
+        <span class="label" data-reveal style="--i:1">More work</span>
+        <div class="more-links">
+          <a href="https://www.behance.net/SvGravity" target="_blank" rel="noopener noreferrer" data-reveal style="--i:2"><span class="u">Behance</span><span class="sr"> (opens in a new tab)</span><svg class="arrow arrow--out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+          <a href="https://dribbble.com/SvGravity" target="_blank" rel="noopener noreferrer" data-reveal style="--i:3"><span class="u">Dribbble</span><span class="sr"> (opens in a new tab)</span><svg class="arrow arrow--out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__bar">
+      <p>&copy; <span data-year>2026</span> Levon Kostandyan</p>
+      <a class="to-top" href="#top"><span class="u">Back to top</span><svg class="arrow arrow--up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 20V4M6 10l6-6 6 6"/></svg></a>
+    </div>
+  </footer>
+</body>
+</html>
