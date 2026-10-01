@@ -103,7 +103,7 @@
       var y = window.scrollY;
       if (progress) {
         var p = maxScroll > 0 ? Math.min(1, Math.max(0, y / maxScroll)) : 0;
-        progress.style.transform = "scaleX(" + p.toFixed(4) + ")";
+        progress.style.scale = p.toFixed(4) + " 1";
       }
 
       var busy = header.classList.contains("is-open") || header.contains(document.activeElement);
@@ -248,34 +248,12 @@
     cursor.innerHTML = '<div class="cursor__box"></div>';
     document.body.appendChild(cursor);
 
-    var px = -100, py = -100; // pointer
-    var cx = -100, cy = -100; // cursor, eased toward the pointer
-    var moving = false;
-
-    var follow = function () {
-      cx += (px - cx) * 0.22;
-      cy += (py - cy) * 0.22;
-      cursor.style.transform = "translate3d(" + cx.toFixed(1) + "px," + cy.toFixed(1) + "px,0)";
-      if (Math.abs(px - cx) > 0.1 || Math.abs(py - cy) > 0.1) {
-        requestAnimationFrame(follow);
-      } else {
-        moving = false;
-      }
-    };
-
+    // The dot sits exactly on the pointer. Easing it toward the pointer made it
+    // trail behind, and with the system pointer hidden the whole page felt slow.
     window.addEventListener("pointermove", function (e) {
       if (e.pointerType && e.pointerType !== "mouse") return;
-      if (!cursor.classList.contains("is-visible")) {
-        cx = px = e.clientX; // appear in place rather than flying in
-        cy = py = e.clientY;
-        cursor.classList.add("is-visible");
-      }
-      px = e.clientX;
-      py = e.clientY;
-      if (!moving) {
-        moving = true;
-        requestAnimationFrame(follow);
-      }
+      cursor.style.transform = "translate3d(" + e.clientX + "px," + e.clientY + "px,0)";
+      if (!cursor.classList.contains("is-visible")) cursor.classList.add("is-visible");
     }, { passive: true });
 
     document.addEventListener("pointerover", function (e) {
